@@ -1,0 +1,95 @@
+#+Title: Building secure software
+#+Author: lvh
+#+Email: _@lvh.io
+
+#+OPTIONS: toc:nil reveal_rolling_links:nil num:nil reveal_history:true
+#+REVEAL_TRANS: linear
+#+REVEAL_THEME: lvh
+
+* Introduction
+** Who am I?
+** In this talk
+** Not in this talk
+
+   #+ATTR_REVEAL: :frag roll-in
+   * Most common security bugs
+   * Importance of software updates
+   * What software to use
+     #+ATTR_REVEAL: :frag roll-in
+     * Except barbican. Use barbican.
+     * And maybe one day icecap.
+
+* The problem
+
+* How did we get here?
+** Many companies don't care
+
+   #+ATTR_REVEAL: :frag roll-in
+   * New features > fixing security bugs
+   * Ranks even lower than tech debt
+   * At least devs know about tech debt...
+
+** Time bombs
+
+   Maybe they'll never go off! Right?!
+
+** Sometimes they do
+
+   #+ATTR_REVEAL: :frag roll-in
+   * Billions of USD yearly
+   * Companies usually not liable
+   * Executives not held accountable
+
+** Education
+** Abstinence-only
+** What /do/ we teach?
+** Liskov substitution
+
+   (∀ x: T(x) → p(x))
+
+   → (∀ S: (T ⊃ S) → (∀ y: S(y) → p(y)))
+
+   #+BEGIN_NOTES
+   Taught in every intro to (OO) programming
+   #+END_NOTES
+
+** Least authority
+
+   Don't give stuff more power than it needs
+
+   #+BEGIN_NOTES
+   Generally not taught except in specialized majors
+   Majors not available at most universities
+   #+END_NOTES
+
+** /(extensive handwaving)/
+
+   #+BEGIN_NOTES
+   Don't mean to bash LSP, certainly not Barbara Liskov
+   Does wonderful work in CS, particularly distributed systems
+   Beyond question one of the great minds of CS
+
+   Very formal LSP description, very informal POLA description
+
+   Ignores that universities are supposed to be about research, not minting programmers
+   #+END_NOTES
+
+** If we taught POLA instead of LSP, we'd be significantly better off.
+
+** Security is not a priority
+
+   (Not in business, not in education)
+
+** ⊢
+
+** Don't be a jerk to your coworkers over infosec problems
+** Don't be a jerk to your coworkers
+** Don't be a jerk
+** Don't
+
+   #+BEGIN_NOTES
+   Just... don't.
+   #+END_NOTES
+
+* Useful conversations about security
+* Questions?

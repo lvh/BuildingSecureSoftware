@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Building secure software</title>
+<meta name="author" content="(lvh)"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.min.css"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/lvh.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<h1>Building secure software</h1>
+<h2>lvh</h2>
+<h2><a href="mailto:_@lvh.io">_@lvh.io</a></h2>
+<h2></h2></section>
+
+<section>
+<section id="sec-1" >
+
+<h2>Introduction</h2>
+</section>
+<section id="sec-1-1" >
+
+<h3>Who am I?</h3>
+</section>
+<section id="sec-1-2" >
+
+<h3>In this talk</h3>
+</section>
+<section id="sec-1-3" >
+
+<h3>Not in this talk</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">Most common security bugs
+</li>
+<li class="fragment roll-in">Importance of software updates
+</li>
+<li class="fragment roll-in">What software to use
+<ul class="org-ul">
+<li class="fragment roll-in">Except barbican. Use barbican.
+</li>
+<li class="fragment roll-in">And maybe one day icecap.
+</li>
+</ul>
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-2" >
+
+<h2>The problem</h2>
+</section>
+
+</section>
+<section>
+<section id="sec-3" >
+
+<h2>How did we get here?</h2>
+</section>
+<section id="sec-3-1" >
+
+<h3>Many companies don&rsquo;t care</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">New features &gt; fixing security bugs
+</li>
+<li class="fragment roll-in">Ranks even lower than tech debt
+</li>
+<li class="fragment roll-in">At least devs know about tech debt&#x2026;
+</li>
+</ul>
+
+</section>
+<section id="sec-3-2" >
+
+<h3>Time bombs</h3>
+<p>
+Maybe they&rsquo;ll never go off! Right?!
+</p>
+
+</section>
+<section id="sec-3-3" >
+
+<h3>Sometimes they do</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">Billions of USD yearly
+</li>
+<li class="fragment roll-in">Companies usually not liable
+</li>
+<li class="fragment roll-in">Executives not held accountable
+</li>
+</ul>
+
+</section>
+<section id="sec-3-4" >
+
+<h3>Education</h3>
+</section>
+<section id="sec-3-5" >
+
+<h3>Abstinence-only</h3>
+</section>
+<section id="sec-3-6" >
+
+<h3>What <i>do</i> we teach?</h3>
+</section>
+<section id="sec-3-7" >
+
+<h3>Liskov substitution</h3>
+<p>
+(∀ x: T(x) → p(x))
+</p>
+
+<p>
+→ (∀ S: (T ⊃ S) → (∀ y: S(y) → p(y)))
+</p>
+
+<aside class="notes">
+<p>
+Taught in every intro to (OO) programming
+</p>
+</aside>
+
+</section>
+<section id="sec-3-8" >
+
+<h3>Least authority</h3>
+<p>
+Don&rsquo;t give stuff more power than it needs
+</p>
+
+<aside class="notes">
+<p>
+Generally not taught except in specialized majors
+Majors not available at most universities
+</p>
+</aside>
+
+</section>
+<section id="sec-3-9" >
+
+<h3><i>(extensive handwaving)</i></h3>
+<aside class="notes">
+<p>
+Don&rsquo;t mean to bash LSP, certainly not Barbara Liskov
+Does wonderful work in CS, particularly distributed systems
+Beyond question one of the great minds of CS
+</p>
+
+<p>
+Very formal LSP description, very informal POLA description
+</p>
+
+<p>
+Ignores that universities are supposed to be about research, not minting programmers
+</p>
+</aside>
+
+</section>
+<section id="sec-3-10" >
+
+<h3>If we taught POLA instead of LSP, we&rsquo;d be significantly better off.</h3>
+
+</section>
+<section id="sec-3-11" >
+
+<h3>Security is not a priority</h3>
+<p>
+(Not in business, not in education)
+</p>
+
+</section>
+<section id="sec-3-12" >
+
+<h3>⊢</h3>
+
+</section>
+<section id="sec-3-13" >
+
+<h3>Don&rsquo;t be a jerk to your coworkers over infosec problems</h3>
+</section>
+<section id="sec-3-14" >
+
+<h3>Don&rsquo;t be a jerk to your coworkers</h3>
+</section>
+<section id="sec-3-15" >
+
+<h3>Don&rsquo;t be a jerk</h3>
+</section>
+<section id="sec-3-16" >
+
+<h3>Don&rsquo;t</h3>
+<aside class="notes">
+<p>
+Just&#x2026; don&rsquo;t.
+</p>
+</aside>
+</section>
+
+</section>
+<section>
+<section id="sec-4" >
+
+<h2>Useful conversations about security</h2>
+</section>
+</section>
+<section>
+<section id="sec-5" >
+
+<h2>Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.min.js"></script>
+<script>
+
+        		// Full list of configuration options available here:
+        		// https://github.com/hakimel/reveal.js#configuration
+        		Reveal.initialize({
+        			controls: true,
+        			progress: true,
+        			history: true,
+        			center: true,
+                                slideNumber: true,
+        			rollingLinks: false,
+        			keyboard: true,
+        			overview: true,
+        			 // slide width
+        			 // slide height
+        			 // slide margin
+        			 // slide minimum scaling factor
+        			 // slide maximum scaling factor
+
+
+        			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        			transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        			transitionSpeed: 'default',
+
+        			// Optional libraries used to extend on reveal.js
+        			dependencies: [
+        				{ src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+        				,{ src: './reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        				,{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+        				,{ src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        				,{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+        				,{ src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        				// { src: './reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+        				// { src: './reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+        			]
+        		});
+</script>
+</body>
+</html>
