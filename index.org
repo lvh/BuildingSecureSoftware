@@ -8,11 +8,29 @@
 
 * Introduction
 ** Who am I?
+
+   #+ATTR_HTML: :style width:80%
+   [[./media/lvh.svg]]
+
+   #+BEGIN_NOTES
+   Software engineer (distributed systems, infosec)
+   #+END_NOTES
+
+** Rackspace
+
+   #+ATTR_HTML: :style width:60%
+   [[./media/rackspace.svg]]
+
 ** In this talk
+
+   #+BEGIN_NOTES
+   reveal.js overview
+   #+END_NOTES
+
 ** Not in this talk
 
    #+ATTR_REVEAL: :frag roll-in
-   * Most common security bugs
+   * Common security bugs
    * Importance of software updates
    * What software to use
      #+ATTR_REVEAL: :frag roll-in
@@ -21,10 +39,18 @@
 
 * The problem
 
+** All software has bugs
+** Some are security bugs
+** Security bugs are bad
+** Our tools don't work
+
+   How do I write the unit test for security?
+
 * How did we get here?
-** Many companies don't care
+** Corps don't care
 
    #+ATTR_REVEAL: :frag roll-in
+   * (Assuming they know; they usually don't)
    * New features > fixing security bugs
    * Ranks even lower than tech debt
    * At least devs know about tech debt...
@@ -38,12 +64,11 @@
    #+ATTR_REVEAL: :frag roll-in
    * Billions of USD yearly
    * Companies usually not liable
-   * Executives not held accountable
+   * Executives not accountable
 
-** Education
-** Abstinence-only
-** What /do/ we teach?
-** Liskov substitution
+** Abstinence-only education
+*** What /do/ we teach?
+*** Liskov substitution
 
    (∀ x: T(x) → p(x))
 
@@ -53,16 +78,17 @@
    Taught in every intro to (OO) programming
    #+END_NOTES
 
-** Least authority
+*** What /don't/ we teach?
+*** Least authority
 
-   Don't give stuff more power than it needs
+   Don't give stuff more power than it needs.
 
    #+BEGIN_NOTES
    Generally not taught except in specialized majors
    Majors not available at most universities
    #+END_NOTES
 
-** /(extensive handwaving)/
+*** /(extensive handwaving)/
 
    #+BEGIN_NOTES
    Don't mean to bash LSP, certainly not Barbara Liskov
@@ -74,22 +100,72 @@
    Ignores that universities are supposed to be about research, not minting programmers
    #+END_NOTES
 
-** If we taught POLA instead of LSP, we'd be significantly better off.
+*** POLA > LSP
+
+   #+BEGIN_NOTES
+   If we taught POLA instead of LSP, we'd be way better off
+   Plenty of programmers don't know about LSP, write software that violates it, but works fine
+   IF you don't know about POLA it's basically always a security problem
+   #+END_NOTES
 
 ** Security is not a priority
 
    (Not in business, not in education)
 
-** ⊢
+*** ⊢
+*** Don't be a jerk to your coworkers over infosec problems
+*** Don't be a jerk to your coworkers
+*** Don't be a jerk
+*** Don't
 
-** Don't be a jerk to your coworkers over infosec problems
-** Don't be a jerk to your coworkers
-** Don't be a jerk
-** Don't
+    #+BEGIN_NOTES
+    Just... don't.
+    #+END_NOTES
 
-   #+BEGIN_NOTES
-   Just... don't.
-   #+END_NOTES
+** Why can we do better?
+
+   * Many of /our/ employers do care
+     * I know mine certainly does
+   * School of hard open source knocks
 
 * Useful conversations about security
+
+** Some vocabulary
+
+*** Attack model
+
+    How will they attack the system?
+
+*** Attack surface
+
+    How can they attack the system?
+
+** Channeling Zooko
+
+   Security is...
+
+   #+ATTR_REVEAL: :frag roll-in
+   * not perfect vs imperfect
+   * not better vs worse
+   * /this/ surface vs /that/ surface
+
+** Useful security proposals
+
+   1. Description
+   1. Attack model (+ motivation)
+   1. Difference in attack surface
+   1. Difference in user experience
+
+** Attack models
+
+   * What attack are you trying to protect against?
+   * How does the current system address this?
+
+** User experience
+
+   #+ATTR_REVEAL: :frag roll-in
+   * One of the most important aspects
+   * Usually completely forgotten about
+   * I'm looking at you, PGP
+
 * Questions?

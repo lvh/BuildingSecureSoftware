@@ -36,16 +36,36 @@
 <section id="sec-1-1" >
 
 <h3>Who am I?</h3>
+<img src="./media/lvh.svg" alt="lvh.svg" style="width:80%" />
+
+<aside class="notes">
+<p>
+Software engineer (distributed systems, infosec)
+</p>
+</aside>
+
 </section>
 <section id="sec-1-2" >
 
-<h3>In this talk</h3>
+<h3>Rackspace</h3>
+<img src="./media/rackspace.svg" alt="rackspace.svg" style="width:60%" />
+
 </section>
 <section id="sec-1-3" >
 
+<h3>In this talk</h3>
+<aside class="notes">
+<p>
+reveal.js overview
+</p>
+</aside>
+
+</section>
+<section id="sec-1-4" >
+
 <h3>Not in this talk</h3>
 <ul class="org-ul">
-<li class="fragment roll-in">Most common security bugs
+<li class="fragment roll-in">Common security bugs
 </li>
 <li class="fragment roll-in">Importance of software updates
 </li>
@@ -66,6 +86,25 @@
 
 <h2>The problem</h2>
 </section>
+<section id="sec-2-1" >
+
+<h3>All software has bugs</h3>
+</section>
+<section id="sec-2-2" >
+
+<h3>Some are security bugs</h3>
+</section>
+<section id="sec-2-3" >
+
+<h3>Security bugs are bad</h3>
+</section>
+<section id="sec-2-4" >
+
+<h3>Our tools don&rsquo;t work</h3>
+<p>
+How do I write the unit test for security?
+</p>
+</section>
 
 </section>
 <section>
@@ -75,8 +114,10 @@
 </section>
 <section id="sec-3-1" >
 
-<h3>Many companies don&rsquo;t care</h3>
+<h3>Corps don&rsquo;t care</h3>
 <ul class="org-ul">
+<li class="fragment roll-in">(Assuming they know; they usually don&rsquo;t)
+</li>
 <li class="fragment roll-in">New features &gt; fixing security bugs
 </li>
 <li class="fragment roll-in">Ranks even lower than tech debt
@@ -102,24 +143,20 @@ Maybe they&rsquo;ll never go off! Right?!
 </li>
 <li class="fragment roll-in">Companies usually not liable
 </li>
-<li class="fragment roll-in">Executives not held accountable
+<li class="fragment roll-in">Executives not accountable
 </li>
 </ul>
 
 </section>
 <section id="sec-3-4" >
 
-<h3>Education</h3>
+<h3>Abstinence-only education</h3>
 </section>
 <section id="sec-3-5" >
 
-<h3>Abstinence-only</h3>
-</section>
-<section id="sec-3-6" >
-
 <h3>What <i>do</i> we teach?</h3>
 </section>
-<section id="sec-3-7" >
+<section id="sec-3-6" >
 
 <h3>Liskov substitution</h3>
 <p>
@@ -137,11 +174,11 @@ Taught in every intro to (OO) programming
 </aside>
 
 </section>
-<section id="sec-3-8" >
+<section id="sec-3-7" >
 
 <h3>Least authority</h3>
 <p>
-Don&rsquo;t give stuff more power than it needs
+Don&rsquo;t give stuff more power than it needs.
 </p>
 
 <aside class="notes">
@@ -152,7 +189,7 @@ Majors not available at most universities
 </aside>
 
 </section>
-<section id="sec-3-9" >
+<section id="sec-3-8" >
 
 <h3><i>(extensive handwaving)</i></h3>
 <aside class="notes">
@@ -172,12 +209,19 @@ Ignores that universities are supposed to be about research, not minting program
 </aside>
 
 </section>
-<section id="sec-3-10" >
+<section id="sec-3-9" >
 
-<h3>If we taught POLA instead of LSP, we&rsquo;d be significantly better off.</h3>
+<h3>POLA &gt; LSP</h3>
+<aside class="notes">
+<p>
+If we taught POLA instead of LSP, we&rsquo;d be way better off
+Plenty of programmers don&rsquo;t know about LSP, write software that violates it, but works fine
+IF you don&rsquo;t know about POLA it&rsquo;s basically always a security problem
+</p>
+</aside>
 
 </section>
-<section id="sec-3-11" >
+<section id="sec-3-10" >
 
 <h3>Security is not a priority</h3>
 <p>
@@ -185,24 +229,24 @@ Ignores that universities are supposed to be about research, not minting program
 </p>
 
 </section>
-<section id="sec-3-12" >
+<section id="sec-3-11" >
 
 <h3>⊢</h3>
 
 </section>
-<section id="sec-3-13" >
+<section id="sec-3-12" >
 
 <h3>Don&rsquo;t be a jerk to your coworkers over infosec problems</h3>
 </section>
-<section id="sec-3-14" >
+<section id="sec-3-13" >
 
 <h3>Don&rsquo;t be a jerk to your coworkers</h3>
 </section>
-<section id="sec-3-15" >
+<section id="sec-3-14" >
 
 <h3>Don&rsquo;t be a jerk</h3>
 </section>
-<section id="sec-3-16" >
+<section id="sec-3-15" >
 
 <h3>Don&rsquo;t</h3>
 <aside class="notes">
@@ -210,6 +254,21 @@ Ignores that universities are supposed to be about research, not minting program
 Just&#x2026; don&rsquo;t.
 </p>
 </aside>
+
+</section>
+<section id="sec-3-16" >
+
+<h3>Why can we do better?</h3>
+<ul class="org-ul">
+<li>Many of <i>our</i> employers do care
+<ul class="org-ul">
+<li>I know mine certainly does
+</li>
+</ul>
+</li>
+<li>School of hard open source knocks
+</li>
+</ul>
 </section>
 
 </section>
@@ -218,6 +277,74 @@ Just&#x2026; don&rsquo;t.
 
 <h2>Useful conversations about security</h2>
 </section>
+<section id="sec-4-1" >
+
+<h3>Some vocabulary</h3>
+</section>
+<section id="sec-4-1-1" >
+
+<h4>Attack surface</h4>
+<p>
+All of the ways an attacker can attack the system
+</p>
+
+</section>
+<section id="sec-4-2" >
+
+<h3>Channeling Zooko</h3>
+<p>
+Security is&#x2026;
+</p>
+
+<ul class="org-ul">
+<li class="fragment roll-in">not perfect vs imperfect
+</li>
+<li class="fragment roll-in">not better vs worse
+</li>
+<li class="fragment roll-in"><i>this</i> surface vs <i>that</i> surface
+</li>
+</ul>
+
+</section>
+<section id="sec-4-3" >
+
+<h3>Useful security proposals</h3>
+<ol class="org-ol">
+<li>Description
+</li>
+<li>Attack model (+ motivation)
+</li>
+<li>Difference in attack surface
+</li>
+<li>Difference in user experience
+</li>
+</ol>
+
+</section>
+<section id="sec-4-4" >
+
+<h3>Attack models</h3>
+<ul class="org-ul">
+<li>What attack are you trying to protect against?
+</li>
+<li>How does the current system address this?
+</li>
+</ul>
+
+</section>
+<section id="sec-4-5" >
+
+<h3>UX</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">One of the most important aspects
+</li>
+<li class="fragment roll-in">Usually completely forgotten about
+</li>
+<li class="fragment roll-in">I&rsquo;m looking at you, PGP
+</li>
+</ul>
+</section>
+
 </section>
 <section>
 <section id="sec-5" >
