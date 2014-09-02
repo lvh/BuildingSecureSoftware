@@ -195,7 +195,7 @@
 
    #+ATTR_REVEAL: :frag roll-in
    * What are you protecting against?
-   * How does the system currently address this?
+   * How is this addressed now?
 
 ** User experience
 
