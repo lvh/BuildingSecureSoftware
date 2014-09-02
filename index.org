@@ -38,15 +38,15 @@
      * And maybe one day icecap.
 
 * The problem
-
 ** All software has bugs
 ** Some are security bugs
 ** Security bugs are bad
+
+* Bad news
 ** Our tools don't work
 
    How do I write the unit test for security?
 
-* How did we get here?
 ** Corps don't care
 
    #+ATTR_REVEAL: :frag roll-in
@@ -122,6 +122,36 @@
     Just... don't.
     #+END_NOTES
 
+* Good news
+
+**
+
+** Some tools do work
+
+   #+ATTR_REVEAL: :frag roll-in
+   (accidentally)
+
+*** Channeling Glyph
+
+    programming /n/: local understanding
+
+*** Applied to systems
+
+    small composed pieces > large monoliths
+
+*** No implications
+
+    #+ATTR_REVEAL: :frag roll-in
+    * microservices ↛ security bliss
+    * monolithic services ↛ security issues
+
+*** Few certainties
+
+    #+ATTR_REVEAL: :frag roll-in
+    * death
+    * taxes
+    * software → problems
+
 ** Why can we do better?
 
    * Many of /our/ employers do care
@@ -151,6 +181,7 @@
 
 ** Useful security proposals
 
+   #+ATTR_REVEAL: :frag roll-in
    1. Description
    1. Attack model (+ motivation)
    1. Difference in attack surface
@@ -158,8 +189,9 @@
 
 ** Attack models
 
-   * What attack are you trying to protect against?
-   * How does the current system address this?
+   #+ATTR_REVEAL: :frag roll-in
+   * What are you protecting against?
+   * How does the system currently address this?
 
 ** User experience
 
