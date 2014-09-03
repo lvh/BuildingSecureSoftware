@@ -55,7 +55,18 @@
 
    How do I write the unit test for "security"?
 
-*** How do we learn about software?
+*** How do we learn software?
+
+*** We read the docs!
+
+*** Infosec docs?
+
+    * Missing
+    * Terrible
+
+*** How else do we learn?
+
+    (Especially when there's no docs)
 
 *** We play with it!
 
