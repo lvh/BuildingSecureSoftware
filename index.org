@@ -43,9 +43,57 @@
 ** Security bugs are bad
 
 * Bad news
+
+** It's all bad, folks
+
+  #+ATTR_REVEAL: :frag roll-in
+  * Tools don't work
+  * Corps don't care
+  * ~.edu~ doesn't educate
+
 ** Our tools don't work
 
-   How do I write the unit test for security?
+   How do I write the unit test for "security"?
+
+*** How do we learn about software?
+
+*** We play with it!
+
+    #+ATTR_REVEAL: :frag roll-in
+    1. Install software
+    2. Play with it
+    3. Learn something
+    4. Repeat
+
+    #+BEGIN_NOTES
+    If I don't know any Twisted/Django/whatever
+    #+END_NOTES
+
+*** Security doesn't work that way
+
+    #+ATTR_REVEAL: :frag roll-in
+    1. Install AES
+    2. Play with it
+    3. Get it wrong
+    4. ???
+
+    #+BEGIN_NOTES
+    Million ways to screw it up: all-zero IVs, unauth enc...
+    Crypto generally doesn't complain when you get it wrong
+    #+END_NOTES
+
+*** It /almost/ works that way
+
+    1. Install software
+    2. Try to break it
+    3. Learn something
+    4. Go to 2
+
+*** We're not trained to think that way
+
+    * Make it work, not make it fail!
+    * Often (not always) pretty hard
+    * Issues usually not obvious
 
 ** Corps don't care
 

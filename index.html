@@ -108,13 +108,102 @@ reveal.js overview
 </section>
 <section id="sec-3-1" >
 
-<h3>Our tools don&rsquo;t work</h3>
-<p>
-How do I write the unit test for security?
-</p>
+<h3>It&rsquo;s all bad, folks</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">Tools don&rsquo;t work
+</li>
+<li class="fragment roll-in">Corps don&rsquo;t care
+</li>
+<li class="fragment roll-in"><code>.edu</code> doesn&rsquo;t educate
+</li>
+</ul>
 
 </section>
 <section id="sec-3-2" >
+
+<h3>Our tools don&rsquo;t work</h3>
+<p>
+How do I write the unit test for &ldquo;security&rdquo;?
+</p>
+
+</section>
+<section id="sec-3-2-1" >
+
+<h4>How do we learn about software?</h4>
+
+</section>
+<section id="sec-3-2-2" >
+
+<h4>We play with it!</h4>
+<ol class="org-ol">
+<li class="fragment roll-in">Install software
+</li>
+<li class="fragment roll-in">Play with it
+</li>
+<li class="fragment roll-in">Learn something
+</li>
+<li class="fragment roll-in">Repeat
+</li>
+</ol>
+
+<aside class="notes">
+<p>
+If I don&rsquo;t know any Twisted/Django/whatever
+</p>
+</aside>
+
+</section>
+<section id="sec-3-2-3" >
+
+<h4>Security doesn&rsquo;t work that way</h4>
+<ol class="org-ol">
+<li class="fragment roll-in">Install AES
+</li>
+<li class="fragment roll-in">Play with it
+</li>
+<li class="fragment roll-in">Get it wrong
+</li>
+<li class="fragment roll-in">???
+</li>
+</ol>
+
+<aside class="notes">
+<p>
+Million ways to screw it up: all-zero IVs, unauth enc&#x2026;
+Crypto generally doesn&rsquo;t complain when you get it wrong
+</p>
+</aside>
+
+</section>
+<section id="sec-3-2-4" >
+
+<h4>It <i>almost</i> works that way</h4>
+<ol class="org-ol">
+<li>Install software
+</li>
+<li>Try to break it
+</li>
+<li>Learn something
+</li>
+<li>Go to 2
+</li>
+</ol>
+
+</section>
+<section id="sec-3-2-5" >
+
+<h4>We&rsquo;re not trained to think that way</h4>
+<ul class="org-ul">
+<li>Make it work, not make it fail!
+</li>
+<li>Often (not always) pretty hard
+</li>
+<li>Issues usually not obvious
+</li>
+</ul>
+
+</section>
+<section id="sec-3-3" >
 
 <h3>Corps don&rsquo;t care</h3>
 <ul class="org-ul">
@@ -129,7 +218,7 @@ How do I write the unit test for security?
 </ul>
 
 </section>
-<section id="sec-3-3" >
+<section id="sec-3-4" >
 
 <h3>Time bombs</h3>
 <p>
@@ -137,7 +226,7 @@ Maybe they&rsquo;ll never go off! Right?!
 </p>
 
 </section>
-<section id="sec-3-4" >
+<section id="sec-3-5" >
 
 <h3>Sometimes they do</h3>
 <ul class="org-ul">
@@ -150,15 +239,15 @@ Maybe they&rsquo;ll never go off! Right?!
 </ul>
 
 </section>
-<section id="sec-3-5" >
+<section id="sec-3-6" >
 
 <h3>Abstinence-only education</h3>
 </section>
-<section id="sec-3-5-1" >
+<section id="sec-3-6-1" >
 
 <h4>What <i>do</i> we teach?</h4>
 </section>
-<section id="sec-3-5-2" >
+<section id="sec-3-6-2" >
 
 <h4>Liskov substitution</h4>
 <p class="fragment roll-in">
@@ -176,14 +265,14 @@ Taught in every intro to (OO) programming
 </aside>
 
 </section>
-<section id="sec-3-5-3" >
+<section id="sec-3-6-3" >
 
 <h4>What <i>don&rsquo;t</i> we teach?</h4>
 </section>
-<section id="sec-3-5-4" >
+<section id="sec-3-6-4" >
 
 <h4>Least authority</h4>
-<p>
+<p class="fragment roll-in">
 Don&rsquo;t give stuff more power than it needs.
 </p>
 
@@ -195,7 +284,7 @@ Majors not available at most universities
 </aside>
 
 </section>
-<section id="sec-3-5-5" >
+<section id="sec-3-6-5" >
 
 <h4><i>(extensive handwaving)</i></h4>
 <aside class="notes">
@@ -215,7 +304,7 @@ Ignores that universities are supposed to be about research, not minting program
 </aside>
 
 </section>
-<section id="sec-3-5-6" >
+<section id="sec-3-6-6" >
 
 <h4>POLA &gt; LSP</h4>
 <aside class="notes">
@@ -227,7 +316,7 @@ IF you don&rsquo;t know about POLA it&rsquo;s basically always a security proble
 </aside>
 
 </section>
-<section id="sec-3-6" >
+<section id="sec-3-7" >
 
 <h3>Security is not a priority</h3>
 <p>
@@ -235,23 +324,23 @@ IF you don&rsquo;t know about POLA it&rsquo;s basically always a security proble
 </p>
 
 </section>
-<section id="sec-3-6-1" >
+<section id="sec-3-7-1" >
 
 <h4>⊢</h4>
 </section>
-<section id="sec-3-6-2" >
+<section id="sec-3-7-2" >
 
 <h4>Don&rsquo;t be a jerk to your coworkers over infosec problems</h4>
 </section>
-<section id="sec-3-6-3" >
+<section id="sec-3-7-3" >
 
 <h4>Don&rsquo;t be a jerk to your coworkers</h4>
 </section>
-<section id="sec-3-6-4" >
+<section id="sec-3-7-4" >
 
 <h4>Don&rsquo;t be a jerk</h4>
 </section>
-<section id="sec-3-6-5" >
+<section id="sec-3-7-5" >
 
 <h4>Don&rsquo;t</h4>
 <aside class="notes">
