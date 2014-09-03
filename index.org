@@ -190,7 +190,7 @@
 
    * Education is fixable
      * Teach people new tricks
-     * Maybe even fix education
+     * Maybe even fix ~.edu~
 
 ** Some tools do work
 
