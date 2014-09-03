@@ -218,11 +218,13 @@
     * taxes
     * software → problems
 
-** Why can we do better?
+** Some employers do care
 
-   * Many of /our/ employers do care
-     * I know mine certainly does
-   * School of hard open source knocks
+   (I know mine certainly does)
+
+** Open source!
+
+   We have an opportunity to shape devs that aren't on the org chart
 
 * Useful conversations about security
 
