@@ -215,8 +215,7 @@
 *** Few certainties
 
     #+ATTR_REVEAL: :frag roll-in
-    * death
-    * taxes
+    * death ∧ taxes
     * software → problems
 
 ** Some employers do care
