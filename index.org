@@ -95,6 +95,7 @@
 
 *** It /almost/ works that way
 
+    #+ATTR_REVEAL: :frag roll-in
     1. Install software
     2. Try to break it
     3. Learn something
