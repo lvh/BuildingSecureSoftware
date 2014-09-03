@@ -70,8 +70,10 @@
 *** What /do/ we teach?
 *** Liskov substitution
 
+   #+ATTR_REVEAL: :frag roll-in
    (∀ x: T(x) → p(x))
 
+   #+ATTR_REVEAL: :frag roll-in
    → (∀ S: (T ⊃ S) → (∀ y: S(y) → p(y)))
 
    #+BEGIN_NOTES
@@ -81,6 +83,7 @@
 *** What /don't/ we teach?
 *** Least authority
 
+   #+ATTR_REVEAL: :frag roll-in
    Don't give stuff more power than it needs.
 
    #+BEGIN_NOTES
