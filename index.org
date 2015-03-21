@@ -11,6 +11,7 @@
   ~www.lvh.io/BuildingSecureSoftware/~
 
 * Introduction
+
 ** Who am I?
 
    #+ATTR_HTML: :style width:80%
@@ -48,7 +49,7 @@
 
 * Bad news
 
-** It's all bad, folks
+** Not a lot of upsides
 
   #+ATTR_REVEAL: :frag roll-in
   * Tools don't work
@@ -63,14 +64,14 @@
 
 *** We read the docs!
 
-*** Infosec docs?
+*** Security docs?
 
     * Missing
     * Terrible
 
 *** How else do we learn?
 
-    (Especially when there's no docs)
+    (Especially without docs)
 
 *** We play with it!
 
@@ -90,7 +91,7 @@
     1. Install AES
     2. Play with it
     3. Get it wrong
-    4. ???
+    4. Repeat
 
     #+BEGIN_NOTES
     Million ways to screw it up: all-zero IVs, unauth enc...
@@ -103,7 +104,7 @@
     1. Install software
     2. Try to break it
     3. Learn something
-    4. Go to 2
+    4. Repeat
 
 *** We're not trained to think that way
 
@@ -111,12 +112,16 @@
     * Often (not always) pretty hard
     * Issues usually not obvious
 
-** Corps don't care
+*** We're not /paid/ to think that way
+
+    Who regularly gets to do e.g. pen testing?
+
+** Most corps don't care
 
    #+ATTR_REVEAL: :frag roll-in
    * (Assuming they know; they usually don't)
    * New features > fixing security bugs
-   * Ranks even lower than tech debt
+   * Security ranks even lower than tech debt
    * At least devs know about tech debt...
 
 ** Time bombs
@@ -125,10 +130,23 @@
 
 ** Sometimes they do
 
+   Billions of USD yearly
+
+** Still doesn't matter
+
    #+ATTR_REVEAL: :frag roll-in
-   * Billions of USD yearly
    * Companies usually not liable
-   * Executives not accountable
+   * Execs rarely held accountable
+   * Little/no effect on bottom line
+
+** Sony
+
+   #+ATTR_HTML: :style width:80%
+   [[./media/SonyMarketCap.png]]
+
+** Most corps don't care
+
+   They can afford not to.
 
 ** Abstinence-only education
 *** What /do/ we teach?
@@ -180,8 +198,8 @@
    (Not in business, not in education)
 
 *** ⊢
-*** Don't be a jerk to your coworkers over infosec problems
-*** Don't be a jerk to your coworkers
+*** Don't be a jerk to your coworkers about infosec
+*** Don't be a jerk about infosec problems
 *** Don't be a jerk
 *** Don't
 
@@ -196,11 +214,11 @@
    * Education is fixable
      * Teach people new tricks
      * Maybe even fix ~.edu~
+   * Public education
 
 ** Some tools do work
 
-   #+ATTR_REVEAL: :frag roll-in
-   (accidentally)
+   (mostly by accident)
 
 *** Channeling Glyph
 
@@ -228,7 +246,7 @@
 
 ** Open source!
 
-   We have an opportunity to shape devs that aren't on the org chart
+   We can shape devs outside of the org chart
 
 * Useful conversations about security
 
@@ -259,17 +277,40 @@
    1. Difference in attack surface
    1. Difference in user experience
 
-** Attack models
+*** Attack models
 
    #+ATTR_REVEAL: :frag roll-in
    * What are you protecting against?
    * How is this addressed now?
 
-** User experience
+*** User experience
 
    #+ATTR_REVEAL: :frag roll-in
    * One of the most important aspects
    * Usually completely forgotten about
    * I'm looking at you, PGP
+
+** Example: smartphones
+
+   * Contain everything
+   * Need to be protected
+
+*** Lock screen!
+
+    Clearly better than no lock screen
+
+*** Options
+
+    On my iPhone 6
+
+    * Passcode
+    * Fingerprint
+
+*** Options
+
+    On other phones
+
+    * Patterns (~ passcode)
+    * Face recognition (~ fingerprint)
 
 * Questions?

@@ -6,7 +6,7 @@
 <title>Building secure software</title>
 <meta name="author" content="(lvh)"/>
 
-<link rel="stylesheet" href="./reveal.js/css/reveal.min.css"/>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 <link rel="stylesheet" href="./reveal.js/css/theme/lvh.css" id="theme"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -27,7 +27,8 @@
 <h1>Building secure software</h1>
 <h2>lvh</h2>
 <h2><a href="mailto:_@lvh.io">_@lvh.io</a></h2>
-<h2></h2></section>
+<h2></h2>
+</section>
 
 <section>
 <section id="sec-1" >
@@ -118,22 +119,22 @@ reveal.js overview
 </section>
 <section id="sec-4-1" >
 
-<h3>It&rsquo;s all bad, folks</h3>
+<h3>Not a lot of upsides</h3>
 <ul class="org-ul">
-<li class="fragment roll-in">Tools don&rsquo;t work
+<li class="fragment roll-in">Tools don't work
 </li>
-<li class="fragment roll-in">Corps don&rsquo;t care
+<li class="fragment roll-in">Corps don't care
 </li>
-<li class="fragment roll-in"><code>.edu</code> doesn&rsquo;t educate
+<li class="fragment roll-in"><code>.edu</code> doesn't educate
 </li>
 </ul>
 
 </section>
 <section id="sec-4-2" >
 
-<h3>Our tools don&rsquo;t work</h3>
+<h3>Our tools don't work</h3>
 <p>
-How do I write the unit test for &ldquo;security&rdquo;?
+How do I write the unit test for "security"?
 </p>
 
 </section>
@@ -149,7 +150,7 @@ How do I write the unit test for &ldquo;security&rdquo;?
 </section>
 <section id="sec-4-2-3" >
 
-<h4>Infosec docs?</h4>
+<h4>Security docs?</h4>
 <ul class="org-ul">
 <li>Missing
 </li>
@@ -162,7 +163,7 @@ How do I write the unit test for &ldquo;security&rdquo;?
 
 <h4>How else do we learn?</h4>
 <p>
-(Especially when there&rsquo;s no docs)
+(Especially without docs)
 </p>
 
 </section>
@@ -182,14 +183,14 @@ How do I write the unit test for &ldquo;security&rdquo;?
 
 <aside class="notes">
 <p>
-If I don&rsquo;t know any Twisted/Django/whatever
+If I don't know any Twisted/Django/whatever
 </p>
 </aside>
 
 </section>
 <section id="sec-4-2-6" >
 
-<h4>Security doesn&rsquo;t work that way</h4>
+<h4>Security doesn't work that way</h4>
 <ol class="org-ol">
 <li class="fragment roll-in">Install AES
 </li>
@@ -197,14 +198,14 @@ If I don&rsquo;t know any Twisted/Django/whatever
 </li>
 <li class="fragment roll-in">Get it wrong
 </li>
-<li class="fragment roll-in">???
+<li class="fragment roll-in">Repeat
 </li>
 </ol>
 
 <aside class="notes">
 <p>
 Million ways to screw it up: all-zero IVs, unauth enc&#x2026;
-Crypto generally doesn&rsquo;t complain when you get it wrong
+Crypto generally doesn't complain when you get it wrong
 </p>
 </aside>
 
@@ -219,14 +220,14 @@ Crypto generally doesn&rsquo;t complain when you get it wrong
 </li>
 <li class="fragment roll-in">Learn something
 </li>
-<li class="fragment roll-in">Go to 2
+<li class="fragment roll-in">Repeat
 </li>
 </ol>
 
 </section>
 <section id="sec-4-2-8" >
 
-<h4>We&rsquo;re not trained to think that way</h4>
+<h4>We're not trained to think that way</h4>
 <ul class="org-ul">
 <li>Make it work, not make it fail!
 </li>
@@ -237,15 +238,23 @@ Crypto generally doesn&rsquo;t complain when you get it wrong
 </ul>
 
 </section>
+<section id="sec-4-2-9" >
+
+<h4>We're not <i>paid</i> to think that way</h4>
+<p>
+Who regularly gets to do e.g. pen testing?
+</p>
+
+</section>
 <section id="sec-4-3" >
 
-<h3>Corps don&rsquo;t care</h3>
+<h3>Most corps don't care</h3>
 <ul class="org-ul">
-<li class="fragment roll-in">(Assuming they know; they usually don&rsquo;t)
+<li class="fragment roll-in">(Assuming they know; they usually don't)
 </li>
 <li class="fragment roll-in">New features &gt; fixing security bugs
 </li>
-<li class="fragment roll-in">Ranks even lower than tech debt
+<li class="fragment roll-in">Security ranks even lower than tech debt
 </li>
 <li class="fragment roll-in">At least devs know about tech debt&#x2026;
 </li>
@@ -256,32 +265,54 @@ Crypto generally doesn&rsquo;t complain when you get it wrong
 
 <h3>Time bombs</h3>
 <p>
-Maybe they&rsquo;ll never go off! Right?!
+Maybe they'll never go off! Right?!
 </p>
 
 </section>
 <section id="sec-4-5" >
 
 <h3>Sometimes they do</h3>
-<ul class="org-ul">
-<li class="fragment roll-in">Billions of USD yearly
-</li>
-<li class="fragment roll-in">Companies usually not liable
-</li>
-<li class="fragment roll-in">Executives not accountable
-</li>
-</ul>
+<p>
+Billions of USD yearly
+</p>
 
 </section>
 <section id="sec-4-6" >
 
+<h3>Still doesn't matter</h3>
+<ul class="org-ul">
+<li class="fragment roll-in">Companies usually not liable
+</li>
+<li class="fragment roll-in">Execs rarely held accountable
+</li>
+<li class="fragment roll-in">Little/no effect on bottom line
+</li>
+</ul>
+
+</section>
+<section id="sec-4-7" >
+
+<h3>Sony</h3>
+<img src="./media/SonyMarketCap.png" alt="SonyMarketCap.png" style="width:80%" />
+
+</section>
+<section id="sec-4-8" >
+
+<h3>Most corps don't care</h3>
+<p>
+They can afford not to.
+</p>
+
+</section>
+<section id="sec-4-9" >
+
 <h3>Abstinence-only education</h3>
 </section>
-<section id="sec-4-6-1" >
+<section id="sec-4-9-1" >
 
 <h4>What <i>do</i> we teach?</h4>
 </section>
-<section id="sec-4-6-2" >
+<section id="sec-4-9-2" >
 
 <h4>Liskov substitution</h4>
 <p class="fragment roll-in">
@@ -299,15 +330,15 @@ Taught in every intro to (OO) programming
 </aside>
 
 </section>
-<section id="sec-4-6-3" >
+<section id="sec-4-9-3" >
 
-<h4>What <i>don&rsquo;t</i> we teach?</h4>
+<h4>What <i>don't</i> we teach?</h4>
 </section>
-<section id="sec-4-6-4" >
+<section id="sec-4-9-4" >
 
 <h4>Least authority</h4>
 <p class="fragment roll-in">
-Don&rsquo;t give stuff more power than it needs.
+Don't give stuff more power than it needs.
 </p>
 
 <aside class="notes">
@@ -318,12 +349,12 @@ Majors not available at most universities
 </aside>
 
 </section>
-<section id="sec-4-6-5" >
+<section id="sec-4-9-5" >
 
 <h4><i>(extensive handwaving)</i></h4>
 <aside class="notes">
 <p>
-Don&rsquo;t mean to bash LSP, certainly not Barbara Liskov
+Don't mean to bash LSP, certainly not Barbara Liskov
 Does wonderful work in CS, particularly distributed systems
 Beyond question one of the great minds of CS
 </p>
@@ -338,19 +369,19 @@ Ignores that universities are supposed to be about research, not minting program
 </aside>
 
 </section>
-<section id="sec-4-6-6" >
+<section id="sec-4-9-6" >
 
 <h4>POLA &gt; LSP</h4>
 <aside class="notes">
 <p>
-If we taught POLA instead of LSP, we&rsquo;d be way better off
-Plenty of programmers don&rsquo;t know about LSP, write software that violates it, but works fine
-IF you don&rsquo;t know about POLA it&rsquo;s basically always a security problem
+If we taught POLA instead of LSP, we'd be way better off
+Plenty of programmers don't know about LSP, write software that violates it, but works fine
+IF you don't know about POLA it's basically always a security problem
 </p>
 </aside>
 
 </section>
-<section id="sec-4-7" >
+<section id="sec-4-10" >
 
 <h3>Security is not a priority</h3>
 <p>
@@ -358,28 +389,28 @@ IF you don&rsquo;t know about POLA it&rsquo;s basically always a security proble
 </p>
 
 </section>
-<section id="sec-4-7-1" >
+<section id="sec-4-10-1" >
 
 <h4>⊢</h4>
 </section>
-<section id="sec-4-7-2" >
+<section id="sec-4-10-2" >
 
-<h4>Don&rsquo;t be a jerk to your coworkers over infosec problems</h4>
+<h4>Don't be a jerk to your coworkers about infosec</h4>
 </section>
-<section id="sec-4-7-3" >
+<section id="sec-4-10-3" >
 
-<h4>Don&rsquo;t be a jerk to your coworkers</h4>
+<h4>Don't be a jerk about infosec problems</h4>
 </section>
-<section id="sec-4-7-4" >
+<section id="sec-4-10-4" >
 
-<h4>Don&rsquo;t be a jerk</h4>
+<h4>Don't be a jerk</h4>
 </section>
-<section id="sec-4-7-5" >
+<section id="sec-4-10-5" >
 
-<h4>Don&rsquo;t</h4>
+<h4>Don't</h4>
 <aside class="notes">
 <p>
-Just&#x2026; don&rsquo;t.
+Just&#x2026; don't.
 </p>
 </aside>
 </section>
@@ -402,14 +433,16 @@ Just&#x2026; don&rsquo;t.
 </li>
 </ul>
 </li>
+<li>Public education
+</li>
 </ul>
 
 </section>
 <section id="sec-5-2" >
 
 <h3>Some tools do work</h3>
-<p class="fragment roll-in">
-(accidentally)
+<p>
+(mostly by accident)
 </p>
 
 </section>
@@ -463,7 +496,7 @@ small composed pieces &gt; large monoliths
 
 <h3>Open source!</h3>
 <p>
-We have an opportunity to shape devs that aren&rsquo;t on the org chart
+We can shape devs outside of the org chart
 </p>
 </section>
 
@@ -525,9 +558,9 @@ Security is&#x2026;
 </ol>
 
 </section>
-<section id="sec-6-4" >
+<section id="sec-6-3-1" >
 
-<h3>Attack models</h3>
+<h4>Attack models</h4>
 <ul class="org-ul">
 <li class="fragment roll-in">What are you protecting against?
 </li>
@@ -536,15 +569,64 @@ Security is&#x2026;
 </ul>
 
 </section>
-<section id="sec-6-5" >
+<section id="sec-6-3-2" >
 
-<h3>User experience</h3>
+<h4>User experience</h4>
 <ul class="org-ul">
 <li class="fragment roll-in">One of the most important aspects
 </li>
 <li class="fragment roll-in">Usually completely forgotten about
 </li>
-<li class="fragment roll-in">I&rsquo;m looking at you, PGP
+<li class="fragment roll-in">I'm looking at you, PGP
+</li>
+</ul>
+
+</section>
+<section id="sec-6-4" >
+
+<h3>Example: smartphones</h3>
+<ul class="org-ul">
+<li>Contain everything
+</li>
+<li>Need to be protected
+</li>
+</ul>
+
+</section>
+<section id="sec-6-4-1" >
+
+<h4>Lock screen!</h4>
+<p>
+Clearly better than no lock screen
+</p>
+
+</section>
+<section id="sec-6-4-2" >
+
+<h4>Options</h4>
+<p>
+On my iPhone 6
+</p>
+
+<ul class="org-ul">
+<li>Passcode
+</li>
+<li>Fingerprint
+</li>
+</ul>
+
+</section>
+<section id="sec-6-4-3" >
+
+<h4>Options</h4>
+<p>
+On other phones
+</p>
+
+<ul class="org-ul">
+<li>Patterns (~ passcode)
+</li>
+<li>Face recognition (~ fingerprint)
 </li>
 </ul>
 </section>
@@ -560,7 +642,7 @@ Security is&#x2026;
 </div>
 
 <script src="./reveal.js/lib/js/head.min.js"></script>
-<script src="./reveal.js/js/reveal.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -579,6 +661,11 @@ overview: true,
 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
