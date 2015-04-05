@@ -226,7 +226,7 @@
     * Microservices ↛ security bliss
     * Monolithic services ↛ security issues
 
-*** Test
+*** Poorly structured programs
 
     [[./media/PoorlyStructuredMonolith.png]]
 
