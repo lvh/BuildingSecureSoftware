@@ -59,8 +59,7 @@
 
 *** Security docs?
 
-    * Missing
-    * Terrible
+    Missing or terrible
 
 *** How else do we learn?
 
