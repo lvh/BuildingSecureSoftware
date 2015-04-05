@@ -244,6 +244,12 @@
       * More communication
       * More programming environments
 
+*** Code review
+
+    * Best thing after a bug tracker
+    * Disseminate experience
+    * Cultivate culture of quality
+
 ** Not /all/ corps
 
    [[./media/NotAllCorps.jpg]]
