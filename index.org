@@ -357,6 +357,11 @@
     #+ATTR_HTML: :style width:50%
     [[./media/Fork.svg]]
 
+*** Which one do you pick?
+
+    * Either is better than neither
+    * Each has their flaws
+
 *** Threat models!
 
 *** US' Fifth Amendement
