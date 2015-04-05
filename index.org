@@ -38,9 +38,6 @@
    * Common security bugs
    * Importance of software updates
    * What software to use
-     #+ATTR_REVEAL: :frag roll-in
-     * Except barbican. Use barbican.
-     * And maybe one day icecap.
 
 * The problem
 ** All software has bugs
