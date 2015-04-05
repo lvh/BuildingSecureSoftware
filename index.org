@@ -349,7 +349,7 @@
 
 *** Secrets
 
-    * People pick poor ones
+    * People pick poor secrets
     * Shoulder surfing
 
 *** Which one do you pick?
