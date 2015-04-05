@@ -106,7 +106,7 @@ Software engineer (distributed systems, infosec)
 <div class="outline-text-2" id="text-4">
 </div></section>
 <section id="slide-sec-4-1">
-<h3 id="sec-4-1">Not a lot of upsides</h3>
+<h3 id="sec-4-1">No wonder it's broken!</h3>
 <ulclass="fragment roll-in">
 <li>Tools don't work</li>
 <li>Corps don't care</li>
@@ -132,11 +132,9 @@ How do I write the unit test for "security"?
 </section>
 <section id="slide-sec-4-2-3">
 <h4 id="sec-4-2-3">Security docs?</h4>
-<ul>
-<li>Missing</li>
-<li>Terrible</li>
-
-</ul>
+<p>
+Missing or terrible
+</p>
 
 </section>
 <section id="slide-sec-4-2-4">
@@ -417,7 +415,7 @@ small composed pieces &gt; large monoliths
 
 </section>
 <section id="slide-sec-5-2-4">
-<h4 id="sec-5-2-4">Test</h4>
+<h4 id="sec-5-2-4">Poorly structured programs</h4>
 
 <div class="figure">
 <p><img src="./media/PoorlyStructuredMonolith.png" alt="PoorlyStructuredMonolith.png" />
@@ -449,6 +447,30 @@ small composed pieces &gt; large monoliths
 </ul>
 
 </section>
+<section id="slide-sec-5-2-7">
+<h4 id="sec-5-2-7">Code review</h4>
+<ul>
+<li>Best thing after a bug tracker</li>
+<li>Disseminate experience</li>
+<li>Cultivate culture of quality</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-5-2-8">
+<h4 id="sec-5-2-8">Automated testing</h4>
+<p>
+A lot <i>can</i> be automated, e.g.,
+</p>
+
+<ul>
+<li>Behavior against bogus certificates</li>
+<li>Unit tests that check middleware</li>
+<li>&#x2026;</li>
+
+</ul>
+
+</section>
 <section id="slide-sec-5-3">
 <h3 id="sec-5-3">Not <i>all</i> corps</h3>
 
@@ -465,6 +487,24 @@ small composed pieces &gt; large monoliths
 <li>I work on security full-time at Rackspace</li>
 <li>Google, Heroku&#x2026; all have excellent teams</li>
 <li>This does not fix our systemic industry problems</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-5-3-2">
+<h4 id="sec-5-3-2">Conway's law</h4>
+<ul>
+<li>Software mimics organization</li>
+<li>If security is an afterthought&#x2026;</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-5-3-3">
+<h4 id="sec-5-3-3">Adversarial approach</h4>
+<ul>
+<li>Third party security audits</li>
+<li>Internal red/blue teams</li>
 
 </ul>
 
@@ -489,14 +529,14 @@ Shape minds not on the org chart
 <section id="slide-sec-6-1-1">
 <h4 id="sec-6-1-1">Attack model</h4>
 <p>
-How will they attack the system?
+How <i>will</i> they attack the system?
 </p>
 
 </section>
 <section id="slide-sec-6-1-2">
 <h4 id="sec-6-1-2">Attack surface</h4>
 <p>
-How can they attack the system?
+How <i>can</i> they attack the system?
 </p>
 
 </section>
@@ -527,7 +567,7 @@ Security is&#x2026;
 </section>
 <section id="slide-sec-6-3-1">
 <h4 id="sec-6-3-1">Attack models</h4>
-<ulclass="fragment roll-in">
+<ul>
 <li>What are you protecting against?</li>
 <li>How is this addressed now?</li>
 
@@ -536,7 +576,7 @@ Security is&#x2026;
 </section>
 <section id="slide-sec-6-3-2">
 <h4 id="sec-6-3-2">User experience</h4>
-<ulclass="fragment roll-in">
+<ul>
 <li>One of the most important aspects</li>
 <li>Usually completely forgotten about</li>
 <li>I'm looking at you, PGP</li>
@@ -599,7 +639,7 @@ Hollywood-level technology!
 <section id="slide-sec-6-4-6">
 <h4 id="sec-6-4-6">Secrets</h4>
 <ul>
-<li>People pick poor ones</li>
+<li>People pick poor secrets</li>
 <li>Shoulder surfing</li>
 
 </ul>
@@ -609,20 +649,93 @@ Hollywood-level technology!
 <h4 id="sec-6-4-7">Which one do you pick?</h4>
 
 <div class="figure">
-<p><img src="./media/Fork.svg" alt="Fork.svg" />
+<p><img src="./media/Fork.svg" alt="Fork.svg" style="width:50%" />
 </p>
 </div>
 
 </section>
 <section id="slide-sec-6-4-8">
-<h4 id="sec-6-4-8">Threat models!</h4>
+<h4 id="sec-6-4-8">Which one do you pick?</h4>
+<ul>
+<li>Either is better than neither</li>
+<li>Each has their flaws</li>
+
+</ul>
 
 </section>
 <section id="slide-sec-6-4-9">
-<h4 id="sec-6-4-9">US' Fifth Amendement</h4>
+<h4 id="sec-6-4-9">Threat models!</h4>
+
+</section>
+<section id="slide-sec-6-4-10">
+<h4 id="sec-6-4-10">Fifth Amendment</h4>
+<ulclass="fragment roll-in">
+<li>(The American one)</li>
+<li>(I am aware we're in Canada)</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-4-11">
+<h4 id="sec-6-4-11">Disclaimer</h4>
+<ul>
+<li>Not legal advice (IANAL)</li>
+<li>Not opsec advice</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-4-12">
+<h4 id="sec-6-4-12">Fifth Amendment</h4>
 <p>
-(I am aware that we are in Canada)
+<i>[&#x2026;] nor shall be compelled in any criminal case to be a witness
+against himself, [&#x2026;]</i>
 </p>
+
+<aside class="notes">
+<p>
+Gratuitous gendered language
+</p>
+
+</aside>
+
+</section>
+<section id="slide-sec-6-4-13">
+<h4 id="sec-6-4-13">Protected from self-incrimination</h4>
+<p>
+Can't force the secret out of you
+</p>
+
+</section>
+<section id="slide-sec-6-4-14">
+<h4 id="sec-6-4-14">Fingerprints aren't secret</h4>
+<ul>
+<li>Police can and does take your fingerprint</li>
+<li>Can force you to unlock your phone</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-4-15">
+<h4 id="sec-6-4-15">Which one is more secure?</h4>
+<p>
+It depends on your threat model!
+</p>
+
+<ul>
+<li>Randos? Probably touch id</li>
+<li>Cops? Definitely passcode</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-4-16">
+<h4 id="sec-6-4-16">Again, not legal or opsec advice</h4>
+<ul>
+<li>I know what happens when you reset your phone</li>
+<li>I am trying to illustrate threat models</li>
+
+</ul>
 
 </section>
 </section>
@@ -632,7 +745,15 @@ Hollywood-level technology!
 <div class="outline-text-2" id="text-7">
 </div></section>
 <section id="slide-sec-7-1">
-<h3 id="sec-7-1">We have a long way to go</h3>
+<h3 id="sec-7-1">Let's do this</h3>
+<ul>
+<li>Most of us are under attack all the time</li>
+<li>We have a long way to go</li>
+<li>We <i>can</i> meaningfully impact security</li>
+<li>Don't need to be an expert</li>
+
+</ul>
+
 </section>
 <section id="slide-sec-7-2">
 <h3 id="sec-7-2">Thank you!</h3>
