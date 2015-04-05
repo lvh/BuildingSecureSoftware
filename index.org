@@ -389,7 +389,7 @@
     Gratuitous gendered language
     #+END_NOTES
 
-*** 5th protects against self-incrimination
+*** Protected from self-incrimination
 
     Can't force the secret out of you
 
