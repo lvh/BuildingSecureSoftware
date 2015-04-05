@@ -91,7 +91,7 @@
     1. Install AES
     2. Play with it
     3. Get it wrong
-    4. Repeat
+    4. Repeat anyway
 
     #+BEGIN_NOTES
     Million ways to screw it up: all-zero IVs, unauth enc...
@@ -108,13 +108,13 @@
 
 *** We're not trained to think that way
 
-    * Make it work, not make it fail!
+    * Make it work, not make it fail
     * Often (not always) pretty hard
     * Issues usually not obvious
 
 *** We're not /paid/ to think that way
 
-    Who regularly gets to do e.g. pen testing?
+    Who regularly gets to do e.g. pentesting?
 
 ** Most corps don't care
 
@@ -124,27 +124,27 @@
    * Security ranks even lower than tech debt
    * At least devs know about tech debt...
 
-** Time bombs
+*** Time bombs
 
    Maybe they'll never go off! Right?!
 
-** Sometimes they do
+*** Sometimes they do
 
    Billions of USD yearly
 
-** Still doesn't matter
+*** Still doesn't matter
 
    #+ATTR_REVEAL: :frag roll-in
    * Companies usually not liable
    * Execs rarely held accountable
    * Little/no effect on bottom line
 
-** Sony
+*** Sony
 
    #+ATTR_HTML: :style width:80%
    [[./media/SonyMarketCap.png]]
 
-** Most corps don't care
+*** Most corps don't care
 
    They can afford not to.
 
@@ -195,11 +195,11 @@
 
 ** Security is not a priority
 
-   (Not in business, not in education)
+   (Not in business, not in education...)
 
 *** ⊢
 *** Don't be a jerk to your coworkers about infosec
-*** Don't be a jerk about infosec problems
+*** Don't be a jerk about infosec
 *** Don't be a jerk
 *** Don't
 
@@ -231,8 +231,8 @@
 *** No implications
 
     #+ATTR_REVEAL: :frag roll-in
-    * microservices ↛ security bliss
-    * monolithic services ↛ security issues
+    * Microservices ↛ security bliss
+    * Monolithic services ↛ security issues
 
 *** Few certainties
 
@@ -240,13 +240,28 @@
     * death ∧ taxes
     * software → problems
 
-** Some employers do care
+*** Microservices
 
-   (I know mine certainly does)
+    * Yes, when split by authority
+    * Arbitrary splits can make it worse
+    * Larger attack surface, because:
+      * More communication
+      * More programming environments
+
+** Not /all/ corps
+
+   [[./media/NotAllCorps.jpg]]
+
+*** Some employers do care
+
+    * Particularly if tech & service are core business
+    * I work on security full-time at Rackspace
+    * Google, Heroku... all have excellent teams
+    * This does not fix our systemic industry problems
 
 ** Open source!
 
-   We can shape devs outside of the org chart
+   Shape minds not on the org chart
 
 * Useful conversations about security
 
@@ -299,18 +314,40 @@
 
     Clearly better than no lock screen
 
-*** Options
-
-    On my iPhone 6
+*** Options on my iPhone 6
 
     * Passcode
     * Fingerprint
 
-*** Options
-
-    On other phones
+*** Options on some other phones
 
     * Patterns (~ passcode)
     * Face recognition (~ fingerprint)
+
+*** Biometrics
+
+    Hollywood-level technology!
+
+*** Biometrics
+
+    * Key rotation?
+    * Separate capabilities?
+    * On everything you touch!
+    * Faking fingers is tricky
+
+*** Secrets
+
+    * People pick poor ones
+    * Shoulder surfing
+
+*** Which one do you pick?
+
+    [[./media/Fork.svg]]
+
+*** Threat models!
+
+*** US' Fifth Amendement
+
+    (I am aware that we are in Canada)
 
 * Questions?
