@@ -283,11 +283,11 @@
 
 *** Attack model
 
-    How will they attack the system?
+    How /will/ they attack the system?
 
 *** Attack surface
 
-    How can they attack the system?
+    How /can/ they attack the system?
 
 ** Channeling Zooko
 
