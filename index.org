@@ -308,13 +308,11 @@
 
 *** Attack models
 
-   #+ATTR_REVEAL: :frag roll-in
    * What are you protecting against?
    * How is this addressed now?
 
 *** User experience
 
-   #+ATTR_REVEAL: :frag roll-in
    * One of the most important aspects
    * Usually completely forgotten about
    * I'm looking at you, PGP
