@@ -354,6 +354,7 @@
 
 *** Which one do you pick?
 
+    #+ATTR_HTML: :style width:50%
     [[./media/Fork.svg]]
 
 *** Threat models!
