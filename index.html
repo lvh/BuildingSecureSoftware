@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <title>Building secure software</title>
-<meta name="author" content="(lvh)"/>
+<meta name="author" content="(@lvh)"/>
 
 <link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 <link rel="stylesheet" href="./reveal.js/css/theme/lvh.css" id="theme"/>
@@ -23,183 +23,155 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
+<section id="sec-title-slide">
 <h1>Building secure software</h1>
-<h2>lvh</h2>
+<h2>@lvh</h2>
 <h2><a href="mailto:_@lvh.io">_@lvh.io</a></h2>
 <h2></h2>
 </section>
 
 <section>
-<section id="sec-1" >
-
-<h2>Slides</h2>
+<section id="slide-sec-1">
+<h2 id="sec-1">Slides</h2>
 <p>
 <code>www.lvh.io/BuildingSecureSoftware/</code>
 </p>
-</section>
 
+</section>
 </section>
 <section>
-<section id="sec-2" >
+<section id="slide-sec-2">
+<h2 id="sec-2">Introduction</h2>
+<div class="outline-text-2" id="text-2">
+</div></section>
+<section id="slide-sec-2-1">
+<h3 id="sec-2-1">Who am I?</h3>
 
-<h2>Introduction</h2>
-</section>
-<section id="sec-2-1" >
-
-<h3>Who am I?</h3>
-<img src="./media/lvh.svg" alt="lvh.svg" style="width:80%" />
+<div class="figure">
+<p><img src="./media/lvh.svg" alt="lvh.svg" style="width:80%" />
+</p>
+</div>
 
 <aside class="notes">
 <p>
 Software engineer (distributed systems, infosec)
 </p>
+
 </aside>
 
 </section>
-<section id="sec-2-2" >
+<section id="slide-sec-2-2">
+<h3 id="sec-2-2">Rackspace</h3>
 
-<h3>Rackspace</h3>
-<img src="./media/rackspace.svg" alt="rackspace.svg" style="width:60%" />
-
-</section>
-<section id="sec-2-3" >
-
-<h3>In this talk</h3>
-<aside class="notes">
-<p>
-reveal.js overview
+<div class="figure">
+<p><img src="./media/rackspace.svg" alt="rackspace.svg" style="width:60%" />
 </p>
-</aside>
+</div>
 
 </section>
-<section id="sec-2-4" >
+<section id="slide-sec-2-3">
+<h3 id="sec-2-3">In this talk</h3>
 
-<h3>Not in this talk</h3>
-<ul class="org-ul">
-<li class="fragment roll-in">Common security bugs
-</li>
-<li class="fragment roll-in">Importance of software updates
-</li>
-<li class="fragment roll-in">What software to use
-<ul class="org-ul">
-<li class="fragment roll-in">Except barbican. Use barbican.
-</li>
-<li class="fragment roll-in">And maybe one day icecap.
-</li>
-</ul>
-</li>
-</ul>
 </section>
+<section id="slide-sec-2-4">
+<h3 id="sec-2-4">Not in this talk</h3>
+<ulclass="fragment roll-in">
+<li>Common security bugs</li>
+<li>Importance of software updates</li>
+<li>What software to use</li>
 
+</ul>
+
+</section>
 </section>
 <section>
-<section id="sec-3" >
-
-<h2>The problem</h2>
+<section id="slide-sec-3">
+<h2 id="sec-3">The problem</h2>
+<div class="outline-text-2" id="text-3">
+</div></section>
+<section id="slide-sec-3-1">
+<h3 id="sec-3-1">All software has bugs</h3>
 </section>
-<section id="sec-3-1" >
-
-<h3>All software has bugs</h3>
+<section id="slide-sec-3-2">
+<h3 id="sec-3-2">Some are security bugs</h3>
 </section>
-<section id="sec-3-2" >
+<section id="slide-sec-3-3">
+<h3 id="sec-3-3">Security bugs are bad</h3>
 
-<h3>Some are security bugs</h3>
 </section>
-<section id="sec-3-3" >
-
-<h3>Security bugs are bad</h3>
-</section>
-
 </section>
 <section>
-<section id="sec-4" >
+<section id="slide-sec-4">
+<h2 id="sec-4">Bad news</h2>
+<div class="outline-text-2" id="text-4">
+</div></section>
+<section id="slide-sec-4-1">
+<h3 id="sec-4-1">Not a lot of upsides</h3>
+<ulclass="fragment roll-in">
+<li>Tools don't work</li>
+<li>Corps don't care</li>
+<li><code>.edu</code> doesn't educate</li>
 
-<h2>Bad news</h2>
-</section>
-<section id="sec-4-1" >
-
-<h3>Not a lot of upsides</h3>
-<ul class="org-ul">
-<li class="fragment roll-in">Tools don't work
-</li>
-<li class="fragment roll-in">Corps don't care
-</li>
-<li class="fragment roll-in"><code>.edu</code> doesn't educate
-</li>
 </ul>
 
 </section>
-<section id="sec-4-2" >
-
-<h3>Our tools don't work</h3>
+<section id="slide-sec-4-2">
+<h3 id="sec-4-2">Our tools don't work</h3>
 <p>
 How do I write the unit test for "security"?
 </p>
 
 </section>
-<section id="sec-4-2-1" >
-
-<h4>How do we learn software?</h4>
-
-</section>
-<section id="sec-4-2-2" >
-
-<h4>We read the docs!</h4>
+<section id="slide-sec-4-2-1">
+<h4 id="sec-4-2-1">How do we learn software?</h4>
 
 </section>
-<section id="sec-4-2-3" >
+<section id="slide-sec-4-2-2">
+<h4 id="sec-4-2-2">We read the docs!</h4>
 
-<h4>Security docs?</h4>
-<ul class="org-ul">
-<li>Missing
-</li>
-<li>Terrible
-</li>
+</section>
+<section id="slide-sec-4-2-3">
+<h4 id="sec-4-2-3">Security docs?</h4>
+<ul>
+<li>Missing</li>
+<li>Terrible</li>
+
 </ul>
 
 </section>
-<section id="sec-4-2-4" >
-
-<h4>How else do we learn?</h4>
+<section id="slide-sec-4-2-4">
+<h4 id="sec-4-2-4">How else do we learn?</h4>
 <p>
 (Especially without docs)
 </p>
 
 </section>
-<section id="sec-4-2-5" >
+<section id="slide-sec-4-2-5">
+<h4 id="sec-4-2-5">We play with it!</h4>
+<olclass="fragment roll-in">
+<li>Install it</li>
+<li>Play with it</li>
+<li>Learn something</li>
+<li>Repeat</li>
 
-<h4>We play with it!</h4>
-<ol class="org-ol">
-<li class="fragment roll-in">Install software
-</li>
-<li class="fragment roll-in">Play with it
-</li>
-<li class="fragment roll-in">Learn something
-</li>
-<li class="fragment roll-in">Repeat
-</li>
 </ol>
 
 <aside class="notes">
 <p>
 If I don't know any Twisted/Django/whatever
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-2-6" >
+<section id="slide-sec-4-2-6">
+<h4 id="sec-4-2-6">Security doesn't work that way</h4>
+<olclass="fragment roll-in">
+<li>Install it</li>
+<li>Play with it</li>
+<li>Get it wrong</li>
+<li>Repeat anyway</li>
 
-<h4>Security doesn't work that way</h4>
-<ol class="org-ol">
-<li class="fragment roll-in">Install AES
-</li>
-<li class="fragment roll-in">Play with it
-</li>
-<li class="fragment roll-in">Get it wrong
-</li>
-<li class="fragment roll-in">Repeat anyway
-</li>
 </ol>
 
 <aside class="notes">
@@ -207,151 +179,134 @@ If I don't know any Twisted/Django/whatever
 Million ways to screw it up: all-zero IVs, unauth enc&#x2026;
 Crypto generally doesn't complain when you get it wrong
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-2-7" >
+<section id="slide-sec-4-2-7">
+<h4 id="sec-4-2-7">It <i>almost</i> works that way</h4>
+<olclass="fragment roll-in">
+<li>Install software</li>
+<li>Try to break it</li>
+<li>Learn something</li>
+<li>Repeat</li>
 
-<h4>It <i>almost</i> works that way</h4>
-<ol class="org-ol">
-<li class="fragment roll-in">Install software
-</li>
-<li class="fragment roll-in">Try to break it
-</li>
-<li class="fragment roll-in">Learn something
-</li>
-<li class="fragment roll-in">Repeat
-</li>
 </ol>
 
 </section>
-<section id="sec-4-2-8" >
+<section id="slide-sec-4-2-8">
+<h4 id="sec-4-2-8">We're not trained to think that way</h4>
+<ul>
+<li>Make it work, not make it fail</li>
+<li>Often (not always) pretty hard</li>
+<li>Issues usually not obvious</li>
 
-<h4>We're not trained to think that way</h4>
-<ul class="org-ul">
-<li>Make it work, not make it fail
-</li>
-<li>Often (not always) pretty hard
-</li>
-<li>Issues usually not obvious
-</li>
 </ul>
 
 </section>
-<section id="sec-4-2-9" >
-
-<h4>We're not <i>paid</i> to think that way</h4>
+<section id="slide-sec-4-2-9">
+<h4 id="sec-4-2-9">We're not <i>paid</i> to think that way</h4>
 <p>
 Who regularly gets to do e.g. pentesting?
 </p>
 
 </section>
-<section id="sec-4-3" >
+<section id="slide-sec-4-3">
+<h3 id="sec-4-3">Most corps don't care</h3>
+<ulclass="fragment roll-in">
+<li>(Assuming they know; they usually don't)</li>
+<li>New features &gt; fixing security bugs</li>
+<li>Security ranks even lower than tech debt</li>
+<li>At least devs know about tech debt&#x2026;</li>
 
-<h3>Most corps don't care</h3>
-<ul class="org-ul">
-<li class="fragment roll-in">(Assuming they know; they usually don't)
-</li>
-<li class="fragment roll-in">New features &gt; fixing security bugs
-</li>
-<li class="fragment roll-in">Security ranks even lower than tech debt
-</li>
-<li class="fragment roll-in">At least devs know about tech debt&#x2026;
-</li>
 </ul>
 
 </section>
-<section id="sec-4-3-1" >
-
-<h4>Time bombs</h4>
+<section id="slide-sec-4-3-1">
+<h4 id="sec-4-3-1">Time bombs</h4>
 <p>
 Maybe they'll never go off! Right?!
 </p>
 
 </section>
-<section id="sec-4-3-2" >
-
-<h4>Sometimes they do</h4>
+<section id="slide-sec-4-3-2">
+<h4 id="sec-4-3-2">Sometimes they do</h4>
 <p>
 Billions of USD yearly
 </p>
 
 </section>
-<section id="sec-4-3-3" >
+<section id="slide-sec-4-3-3">
+<h4 id="sec-4-3-3">Still doesn't matter</h4>
+<ulclass="fragment roll-in">
+<li>Companies usually not liable</li>
+<li>Execs rarely held accountable</li>
+<li>Little/no effect on bottom line</li>
 
-<h4>Still doesn't matter</h4>
-<ul class="org-ul">
-<li class="fragment roll-in">Companies usually not liable
-</li>
-<li class="fragment roll-in">Execs rarely held accountable
-</li>
-<li class="fragment roll-in">Little/no effect on bottom line
-</li>
 </ul>
 
 </section>
-<section id="sec-4-3-4" >
+<section id="slide-sec-4-3-4">
+<h4 id="sec-4-3-4">Sony</h4>
 
-<h4>Sony</h4>
-<img src="./media/SonyMarketCap.png" alt="SonyMarketCap.png" style="width:80%" />
+<div class="figure">
+<p><img src="./media/SonyMarketCap.png" alt="SonyMarketCap.png" style="width:80%" />
+</p>
+</div>
 
 </section>
-<section id="sec-4-3-5" >
-
-<h4>Most corps don't care</h4>
+<section id="slide-sec-4-3-5">
+<h4 id="sec-4-3-5">Most corps don't care</h4>
 <p>
 They can afford not to.
 </p>
 
 </section>
-<section id="sec-4-4" >
-
-<h3>Abstinence-only education</h3>
+<section id="slide-sec-4-4">
+<h3 id="sec-4-4">Abstinence-only education</h3>
+<div class="outline-text-3" id="text-4-4">
+</div></section>
+<section id="slide-sec-4-4-1">
+<h4 id="sec-4-4-1">What <i>do</i> we teach?</h4>
 </section>
-<section id="sec-4-4-1" >
-
-<h4>What <i>do</i> we teach?</h4>
-</section>
-<section id="sec-4-4-2" >
-
-<h4>Liskov substitution</h4>
-<p class="fragment roll-in">
+<section id="slide-sec-4-4-2">
+<h4 id="sec-4-4-2">Liskov substitution</h4>
+<span class="fragment roll-in"><p>
 (∀ x: T(x) → p(x))
-</p>
+</p></span>
 
-<p class="fragment roll-in">
+<span class="fragment roll-in"><p>
 → (∀ S: (T ⊃ S) → (∀ y: S(y) → p(y)))
-</p>
+</p></span>
 
 <aside class="notes">
 <p>
 Taught in every intro to (OO) programming
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-4-3" >
-
-<h4>What <i>don't</i> we teach?</h4>
+<section id="slide-sec-4-4-3">
+<h4 id="sec-4-4-3">What <i>don't</i> we teach?</h4>
 </section>
-<section id="sec-4-4-4" >
-
-<h4>Least authority</h4>
-<p class="fragment roll-in">
+<section id="slide-sec-4-4-4">
+<h4 id="sec-4-4-4">Least authority</h4>
+<span class="fragment roll-in"><p>
 Don't give stuff more power than it needs.
-</p>
+</p></span>
 
 <aside class="notes">
 <p>
 Generally not taught except in specialized majors
 Majors not available at most universities
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-4-5" >
-
-<h4><i>(extensive handwaving)</i></h4>
+<section id="slide-sec-4-4-5">
+<h4 id="sec-4-4-5"><i>(extensive handwaving)</i></h4>
 <aside class="notes">
 <p>
 Don't mean to bash LSP, certainly not Barbara Liskov
@@ -366,347 +321,321 @@ Very formal LSP description, very informal POLA description
 <p>
 Ignores that universities are supposed to be about research, not minting programmers
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-4-6" >
-
-<h4>POLA &gt; LSP</h4>
+<section id="slide-sec-4-4-6">
+<h4 id="sec-4-4-6">POLA &gt; LSP</h4>
 <aside class="notes">
 <p>
 If we taught POLA instead of LSP, we'd be way better off
 Plenty of programmers don't know about LSP, write software that violates it, but works fine
 IF you don't know about POLA it's basically always a security problem
 </p>
+
 </aside>
 
 </section>
-<section id="sec-4-5" >
-
-<h3>Security is not a priority</h3>
+<section id="slide-sec-4-5">
+<h3 id="sec-4-5">Security is not a priority</h3>
 <p>
-(Not in business, not in education)
+(Not in business, not in education&#x2026;)
 </p>
 
 </section>
-<section id="sec-4-5-1" >
-
-<h4>⊢</h4>
+<section id="slide-sec-4-5-1">
+<h4 id="sec-4-5-1">⊢</h4>
 </section>
-<section id="sec-4-5-2" >
-
-<h4>Don't be a jerk to your coworkers about infosec</h4>
+<section id="slide-sec-4-5-2">
+<h4 id="sec-4-5-2">Don't be a jerk to your coworkers about infosec</h4>
 </section>
-<section id="sec-4-5-3" >
-
-<h4>Don't be a jerk about infosec problems</h4>
+<section id="slide-sec-4-5-3">
+<h4 id="sec-4-5-3">Don't be a jerk about infosec</h4>
 </section>
-<section id="sec-4-5-4" >
-
-<h4>Don't be a jerk</h4>
+<section id="slide-sec-4-5-4">
+<h4 id="sec-4-5-4">Don't be a jerk</h4>
 </section>
-<section id="sec-4-5-5" >
-
-<h4>Don't</h4>
+<section id="slide-sec-4-5-5">
+<h4 id="sec-4-5-5">Don't</h4>
 <aside class="notes">
 <p>
 Just&#x2026; don't.
 </p>
-</aside>
-</section>
 
+</aside>
+
+</section>
 </section>
 <section>
-<section id="sec-5" >
-
-<h2>Good news</h2>
-</section>
-<section id="sec-5-1" >
-
-<h3>Problems are not set in stone</h3>
-<ul class="org-ul">
+<section id="slide-sec-5">
+<h2 id="sec-5">Good news</h2>
+<div class="outline-text-2" id="text-5">
+</div></section>
+<section id="slide-sec-5-1">
+<h3 id="sec-5-1">Problems are not set in stone</h3>
+<ul>
 <li>Education is fixable
-<ul class="org-ul">
-<li>Teach people new tricks
-</li>
-<li>Maybe even fix <code>.edu</code>
-</li>
-</ul>
-</li>
-<li>Public education
-</li>
+<ul>
+<li>Teach people new tricks</li>
+<li>Maybe even fix <code>.edu</code></li>
+
+</ul></li>
+<li>Public education</li>
+
 </ul>
 
 </section>
-<section id="sec-5-2" >
-
-<h3>Some tools do work</h3>
+<section id="slide-sec-5-2">
+<h3 id="sec-5-2">Some tools do work</h3>
 <p>
 (mostly by accident)
 </p>
 
 </section>
-<section id="sec-5-2-1" >
-
-<h4>Channeling Glyph</h4>
+<section id="slide-sec-5-2-1">
+<h4 id="sec-5-2-1">Channeling Glyph</h4>
 <p>
 programming <i>n</i>: local understanding
 </p>
 
 </section>
-<section id="sec-5-2-2" >
-
-<h4>Applied to systems</h4>
+<section id="slide-sec-5-2-2">
+<h4 id="sec-5-2-2">Applied to systems</h4>
 <p>
 small composed pieces &gt; large monoliths
 </p>
 
 </section>
-<section id="sec-5-2-3" >
+<section id="slide-sec-5-2-3">
+<h4 id="sec-5-2-3">No implications</h4>
+<ulclass="fragment roll-in">
+<li>Microservices ↛ security bliss</li>
+<li>Monolithic services ↛ security issues</li>
 
-<h4>No implications</h4>
-<ul class="org-ul">
-<li class="fragment roll-in">Microservices ↛ security bliss
-</li>
-<li class="fragment roll-in">Monolithic services ↛ security issues
-</li>
 </ul>
 
 </section>
-<section id="sec-5-2-4" >
+<section id="slide-sec-5-2-4">
+<h4 id="sec-5-2-4">Test</h4>
 
-<h4>Few certainties</h4>
-<ul class="org-ul">
-<li class="fragment roll-in">death ∧ taxes
-</li>
-<li class="fragment roll-in">software → problems
-</li>
+<div class="figure">
+<p><img src="./media/PoorlyStructuredMonolith.png" alt="PoorlyStructuredMonolith.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-sec-5-2-5">
+<h4 id="sec-5-2-5">Few certainties</h4>
+<ulclass="fragment roll-in">
+<li>death ∧ taxes</li>
+<li>software → problems</li>
+
 </ul>
 
 </section>
-<section id="sec-5-2-5" >
+<section id="slide-sec-5-2-6">
+<h4 id="sec-5-2-6">Microservices</h4>
+<ul>
+<li>Yes, when split by authority</li>
+<li>Arbitrary splits can make it worse</li>
+<li>Larger attack surface, because:
+<ul>
+<li>More communication</li>
+<li>More programming environments</li>
 
-<h4>Microservices</h4>
-<ul class="org-ul">
-<li>Split up by least authority
-</li>
-<li>Arbitrary splits may make matters worse
-</li>
-<li>More external communication: larger attack surface
-</li>
+</ul></li>
+
 </ul>
 
 </section>
-<section id="sec-5-3" >
+<section id="slide-sec-5-3">
+<h3 id="sec-5-3">Not <i>all</i> corps</h3>
 
-<h3>Not <i>all</i> corps</h3>
-<img src="./media/NotAllCorps.jpg" alt="NotAllCorps.jpg" />
+<div class="figure">
+<p><img src="./media/NotAllCorps.jpg" alt="NotAllCorps.jpg" />
+</p>
+</div>
 
 </section>
-<section id="sec-5-3-1" >
+<section id="slide-sec-5-3-1">
+<h4 id="sec-5-3-1">Some employers do care</h4>
+<ul>
+<li>Particularly if tech &amp; service are core business</li>
+<li>I work on security full-time at Rackspace</li>
+<li>Google, Heroku&#x2026; all have excellent teams</li>
+<li>This does not fix our systemic industry problems</li>
 
-<h4>Some employers do care</h4>
-<ul class="org-ul">
-<li>Particularly if software &amp; service are core business
-</li>
-<li>I work on security full-time at Rackspace
-</li>
-<li>Google, Heroku&#x2026; all have excellent teams
-</li>
-<li>This does not fix our systemic industry problems
-</li>
 </ul>
 
 </section>
-<section id="sec-5-4" >
-
-<h3>Open source!</h3>
+<section id="slide-sec-5-4">
+<h3 id="sec-5-4">Open source!</h3>
 <p>
 Shape minds not on the org chart
 </p>
-</section>
 
+</section>
 </section>
 <section>
-<section id="sec-6" >
-
-<h2>Useful conversations about security</h2>
-</section>
-<section id="sec-6-1" >
-
-<h3>Some vocabulary</h3>
-</section>
-<section id="sec-6-1-1" >
-
-<h4>Attack model</h4>
+<section id="slide-sec-6">
+<h2 id="sec-6">Conversations about security</h2>
+<div class="outline-text-2" id="text-6">
+</div></section>
+<section id="slide-sec-6-1">
+<h3 id="sec-6-1">Some vocabulary</h3>
+<div class="outline-text-3" id="text-6-1">
+</div></section>
+<section id="slide-sec-6-1-1">
+<h4 id="sec-6-1-1">Attack model</h4>
 <p>
 How will they attack the system?
 </p>
 
 </section>
-<section id="sec-6-1-2" >
-
-<h4>Attack surface</h4>
+<section id="slide-sec-6-1-2">
+<h4 id="sec-6-1-2">Attack surface</h4>
 <p>
 How can they attack the system?
 </p>
 
 </section>
-<section id="sec-6-2" >
-
-<h3>Channeling Zooko</h3>
+<section id="slide-sec-6-2">
+<h3 id="sec-6-2">Channeling Zooko</h3>
 <p>
 Security is&#x2026;
 </p>
 
-<ul class="org-ul">
-<li class="fragment roll-in">not perfect vs imperfect
-</li>
-<li class="fragment roll-in">not better vs worse
-</li>
-<li class="fragment roll-in"><i>this</i> surface vs <i>that</i> surface
-</li>
+<ulclass="fragment roll-in">
+<li>not perfect vs imperfect</li>
+<li>not better vs worse</li>
+<li><i>this</i> surface vs <i>that</i> surface</li>
+
 </ul>
 
 </section>
-<section id="sec-6-3" >
+<section id="slide-sec-6-3">
+<h3 id="sec-6-3">Useful security proposals</h3>
+<olclass="fragment roll-in">
+<li>Description</li>
+<li>Attack model (+ motivation)</li>
+<li>Difference in attack surface</li>
+<li>Difference in user experience</li>
 
-<h3>Useful security proposals</h3>
-<ol class="org-ol">
-<li class="fragment roll-in">Description
-</li>
-<li class="fragment roll-in">Attack model (+ motivation)
-</li>
-<li class="fragment roll-in">Difference in attack surface
-</li>
-<li class="fragment roll-in">Difference in user experience
-</li>
 </ol>
 
 </section>
-<section id="sec-6-3-1" >
+<section id="slide-sec-6-3-1">
+<h4 id="sec-6-3-1">Attack models</h4>
+<ulclass="fragment roll-in">
+<li>What are you protecting against?</li>
+<li>How is this addressed now?</li>
 
-<h4>Attack models</h4>
-<ul class="org-ul">
-<li class="fragment roll-in">What are you protecting against?
-</li>
-<li class="fragment roll-in">How is this addressed now?
-</li>
 </ul>
 
 </section>
-<section id="sec-6-3-2" >
+<section id="slide-sec-6-3-2">
+<h4 id="sec-6-3-2">User experience</h4>
+<ulclass="fragment roll-in">
+<li>One of the most important aspects</li>
+<li>Usually completely forgotten about</li>
+<li>I'm looking at you, PGP</li>
 
-<h4>User experience</h4>
-<ul class="org-ul">
-<li class="fragment roll-in">One of the most important aspects
-</li>
-<li class="fragment roll-in">Usually completely forgotten about
-</li>
-<li class="fragment roll-in">I'm looking at you, PGP
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4" >
+<section id="slide-sec-6-4">
+<h3 id="sec-6-4">Example: smartphones</h3>
+<ul>
+<li>Contain everything</li>
+<li>Need to be protected</li>
 
-<h3>Example: smartphones</h3>
-<ul class="org-ul">
-<li>Contain everything
-</li>
-<li>Need to be protected
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4-1" >
-
-<h4>Lock screen!</h4>
+<section id="slide-sec-6-4-1">
+<h4 id="sec-6-4-1">Lock screen!</h4>
 <p>
 Clearly better than no lock screen
 </p>
 
 </section>
-<section id="sec-6-4-2" >
+<section id="slide-sec-6-4-2">
+<h4 id="sec-6-4-2">Options on my iPhone 6</h4>
+<ul>
+<li>Passcode</li>
+<li>Fingerprint</li>
 
-<h4>Options on my iPhone 6</h4>
-<ul class="org-ul">
-<li>Passcode
-</li>
-<li>Fingerprint
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4-3" >
+<section id="slide-sec-6-4-3">
+<h4 id="sec-6-4-3">Options on some other phones</h4>
+<ul>
+<li>Patterns (~ passcode)</li>
+<li>Face recognition (~ fingerprint)</li>
 
-<h4>Options on some other phones</h4>
-<ul class="org-ul">
-<li>Patterns (~ passcode)
-</li>
-<li>Face recognition (~ fingerprint)
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4-4" >
-
-<h4>Biometrics</h4>
+<section id="slide-sec-6-4-4">
+<h4 id="sec-6-4-4">Biometrics</h4>
 <p>
 Hollywood-level technology!
 </p>
 
 </section>
-<section id="sec-6-4-5" >
+<section id="slide-sec-6-4-5">
+<h4 id="sec-6-4-5">Biometrics</h4>
+<ul>
+<li>Key rotation?</li>
+<li>Separate capabilities?</li>
+<li>On everything you touch!</li>
+<li>Faking fingers is tricky</li>
 
-<h4>Biometrics</h4>
-<ul class="org-ul">
-<li>Key rotation?
-</li>
-<li>Separate capabilities?
-</li>
-<li>On everything you touch!
-</li>
-<li>Faking fingers is tricky
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4-6" >
+<section id="slide-sec-6-4-6">
+<h4 id="sec-6-4-6">Secrets</h4>
+<ul>
+<li>People pick poor ones</li>
+<li>Shoulder surfing</li>
 
-<h4>Secrets</h4>
-<ul class="org-ul">
-<li>People pick poor ones
-</li>
-<li>Shoulder surfing
-</li>
 </ul>
 
 </section>
-<section id="sec-6-4-7" >
+<section id="slide-sec-6-4-7">
+<h4 id="sec-6-4-7">Which one do you pick?</h4>
 
-<h4>Which one do you pick?</h4>
-<img src="./media/Fork.svg" alt="Fork.svg" />
-
-</section>
-<section id="sec-6-4-8" >
-
-<h4>Threat models!</h4>
+<div class="figure">
+<p><img src="./media/Fork.svg" alt="Fork.svg" />
+</p>
+</div>
 
 </section>
-<section id="sec-6-4-9" >
+<section id="slide-sec-6-4-8">
+<h4 id="sec-6-4-8">Threat models!</h4>
 
-<h4>US' Fifth Amendement</h4>
+</section>
+<section id="slide-sec-6-4-9">
+<h4 id="sec-6-4-9">US' Fifth Amendement</h4>
 <p>
 (I am aware that we are in Canada)
 </p>
-</section>
 
+</section>
 </section>
 <section>
-<section id="sec-7" >
-
-<h2>Questions?</h2>
+<section id="slide-sec-7">
+<h2 id="sec-7">Wrap-up</h2>
+<div class="outline-text-2" id="text-7">
+</div></section>
+<section id="slide-sec-7-1">
+<h3 id="sec-7-1">We have a long way to go</h3>
+</section>
+<section id="slide-sec-7-2">
+<h3 id="sec-7-2">Thank you!</h3>
 </section>
 </section>
 </div>

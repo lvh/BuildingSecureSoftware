@@ -227,6 +227,10 @@
     * Microservices ↛ security bliss
     * Monolithic services ↛ security issues
 
+*** Test
+
+    [[./media/PoorlyStructuredMonolith.png]]
+
 *** Few certainties
 
     #+ATTR_REVEAL: :frag roll-in
@@ -342,4 +346,6 @@
 
     (I am aware that we are in Canada)
 
-* Questions?
+* Wrap-up
+** We have a long way to go
+** Thank you!
