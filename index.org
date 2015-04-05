@@ -250,6 +250,14 @@
     * Disseminate experience
     * Cultivate culture of quality
 
+*** Automated testing
+
+    A lot /can/ be automated, e.g.,
+
+    * Behavior against bogus certificates
+    * Unit tests that check middleware
+    * ...
+
 ** Not /all/ corps
 
    [[./media/NotAllCorps.jpg]]
