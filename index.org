@@ -42,7 +42,7 @@
 
 * Bad news
 
-** Not a lot of upsides
+** No wonder it's broken!
 
   #+ATTR_REVEAL: :frag roll-in
   * Tools don't work
