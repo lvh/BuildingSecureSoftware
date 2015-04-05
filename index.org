@@ -73,7 +73,7 @@
 *** We play with it!
 
     #+ATTR_REVEAL: :frag roll-in
-    1. Install software
+    1. Install it
     2. Play with it
     3. Learn something
     4. Repeat
@@ -85,7 +85,7 @@
 *** Security doesn't work that way
 
     #+ATTR_REVEAL: :frag roll-in
-    1. Install AES
+    1. Install it
     2. Play with it
     3. Get it wrong
     4. Repeat anyway
