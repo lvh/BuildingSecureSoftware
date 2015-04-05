@@ -269,6 +269,11 @@
     * Google, Heroku... all have excellent teams
     * This does not fix our systemic industry problems
 
+*** Conway's law
+
+    * Software mimics organization
+    * If security is an afterthought...
+
 ** Open source!
 
    Shape minds not on the org chart
