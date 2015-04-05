@@ -274,6 +274,11 @@
     * Software mimics organization
     * If security is an afterthought...
 
+*** Adversarial approach
+
+    * Third party security audits
+    * Internal red/blue teams
+
 ** Open source!
 
    Shape minds not on the org chart
