@@ -28,9 +28,9 @@
 
 ** In this talk
 
-   #+BEGIN_NOTES
-   reveal.js overview
-   #+END_NOTES
+   * Our security is broken
+   * Why is it broken?
+   * How do we fix it?
 
 ** Not in this talk
 
