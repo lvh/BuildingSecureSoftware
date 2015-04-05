@@ -28,10 +28,6 @@
 
 ** In this talk
 
-   * Our security is broken
-   * Why is it broken?
-   * How do we fix it?
-
 ** Not in this talk
 
    #+ATTR_REVEAL: :frag roll-in
