@@ -364,9 +364,46 @@
 
 *** Threat models!
 
-*** US' Fifth Amendement
+*** Fifth Amendment
 
-    (I am aware that we are in Canada)
+    #+ATTR_REVEAL: :frag roll-in
+    * (The American one)
+    * (I am aware we're in Canada)
+
+*** Disclaimer
+
+    * Not legal advice (IANAL)
+    * Not opsec advice
+
+*** Fifth Amendment
+
+    /[...] nor shall be compelled in any criminal case to be a witness
+    against himself, [...]/
+
+    #+BEGIN_NOTES
+    Gratuitous gendered language
+    #+END_NOTES
+
+*** 5th protects against self-incrimination
+
+    Can't force the secret out of you
+
+*** Fingerprints aren't secret
+
+    * Police can and does take your fingerprint
+    * Can force you to unlock your phone
+
+*** Which one is more secure?
+
+    It depends on your threat model!
+
+    * Randos? Probably touch id
+    * Cops? Definitely passcode
+
+*** Again, not legal or opsec advice
+
+    * I know what happens when you reset your phone
+    * I am trying to illustrate threat models
 
 * Wrap-up
 ** We have a long way to go
