@@ -411,5 +411,12 @@
     * I am trying to illustrate threat models
 
 * Wrap-up
-** We have a long way to go
+
+** Let's do this
+
+   * Most of us are under attack all the time
+   * We have a long way to go
+   * We /can/ meaningfully impact security
+   * Don't need to be an expert
+
 ** Thank you!
