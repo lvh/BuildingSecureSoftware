@@ -260,8 +260,7 @@
 
    Shape minds not on the org chart
 
-* Useful conversations about security
-
+* Conversations about security
 ** Some vocabulary
 
 *** Attack model
