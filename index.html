@@ -75,7 +75,7 @@ Software engineer (distributed systems, infosec)
 </section>
 <section id="slide-sec-2-4">
 <h3 id="sec-2-4">Not in this talk</h3>
-<ulclass="fragment roll-in">
+<ul class="fragment roll-in">
 <li>Common security bugs</li>
 <li>Importance of software updates</li>
 <li>What software to use</li>
@@ -107,9 +107,9 @@ Software engineer (distributed systems, infosec)
 </div></section>
 <section id="slide-sec-4-1">
 <h3 id="sec-4-1">No wonder it's broken!</h3>
-<ulclass="fragment roll-in">
+<ul class="fragment roll-in">
 <li>Tools don't work</li>
-<li>Corps don't care</li>
+<li>Corps mess it up</li>
 <li><code>.edu</code> doesn't educate</li>
 
 </ul>
@@ -120,6 +120,14 @@ Software engineer (distributed systems, infosec)
 <p>
 How do I write the unit test for "security"?
 </p>
+
+<aside class="notes">
+<p>
+When I say tools, I mean that in the fairly abstract
+sense, not e.g. pip or Emacs
+</p>
+
+</aside>
 
 </section>
 <section id="slide-sec-4-2-1">
@@ -138,19 +146,26 @@ Missing or terrible
 
 </section>
 <section id="slide-sec-4-2-4">
-<h4 id="sec-4-2-4">How else do we learn?</h4>
+<h4 id="sec-4-2-4">Google &amp; StackOverflow</h4>
+<p>
+Lots of misinformation
+</p>
+
+</section>
+<section id="slide-sec-4-2-5">
+<h4 id="sec-4-2-5">How else do we learn?</h4>
 <p>
 (Especially without docs)
 </p>
 
 </section>
-<section id="slide-sec-4-2-5">
-<h4 id="sec-4-2-5">We play with it!</h4>
-<olclass="fragment roll-in">
-<li>Install it</li>
-<li>Play with it</li>
-<li>Learn something</li>
-<li>Repeat</li>
+<section id="slide-sec-4-2-6">
+<h4 id="sec-4-2-6">We play with it!</h4>
+<ol>
+<li class="fragment roll-in">Install it</li>
+<li class="fragment roll-in">Play with it</li>
+<li class="fragment roll-in">Learn something</li>
+<li class="fragment roll-in">Repeat</li>
 
 </ol>
 
@@ -162,13 +177,13 @@ If I don't know any Twisted/Django/whatever
 </aside>
 
 </section>
-<section id="slide-sec-4-2-6">
-<h4 id="sec-4-2-6">Security doesn't work that way</h4>
-<olclass="fragment roll-in">
-<li>Install it</li>
-<li>Play with it</li>
-<li>Get it wrong</li>
-<li>Repeat anyway</li>
+<section id="slide-sec-4-2-7">
+<h4 id="sec-4-2-7">Security doesn't work that way</h4>
+<ol>
+<li class="fragment roll-in">Install it</li>
+<li class="fragment roll-in">Play with it</li>
+<li class="fragment roll-in">Get it wrong</li>
+<li class="fragment roll-in">Repeat anyway</li>
 
 </ol>
 
@@ -181,19 +196,19 @@ Crypto generally doesn't complain when you get it wrong
 </aside>
 
 </section>
-<section id="slide-sec-4-2-7">
-<h4 id="sec-4-2-7">It <i>almost</i> works that way</h4>
-<olclass="fragment roll-in">
-<li>Install software</li>
-<li>Try to break it</li>
-<li>Learn something</li>
-<li>Repeat</li>
+<section id="slide-sec-4-2-8">
+<h4 id="sec-4-2-8">It <i>almost</i> works that way</h4>
+<ol>
+<li class="fragment roll-in">Install software</li>
+<li class="fragment roll-in">Try to break it</li>
+<li class="fragment roll-in">Learn something</li>
+<li class="fragment roll-in">Repeat</li>
 
 </ol>
 
 </section>
-<section id="slide-sec-4-2-8">
-<h4 id="sec-4-2-8">We're not trained to think that way</h4>
+<section id="slide-sec-4-2-9">
+<h4 id="sec-4-2-9">We're not trained to think that way</h4>
 <ul>
 <li>Make it work, not make it fail</li>
 <li>Often (not always) pretty hard</li>
@@ -202,20 +217,19 @@ Crypto generally doesn't complain when you get it wrong
 </ul>
 
 </section>
-<section id="slide-sec-4-2-9">
-<h4 id="sec-4-2-9">We're not <i>paid</i> to think that way</h4>
+<section id="slide-sec-4-2-10">
+<h4 id="sec-4-2-10">We're not <i>paid</i> to think that way</h4>
 <p>
 Who regularly gets to do e.g. pentesting?
 </p>
 
 </section>
 <section id="slide-sec-4-3">
-<h3 id="sec-4-3">Most corps don't care</h3>
-<ulclass="fragment roll-in">
-<li>(Assuming they know; they usually don't)</li>
+<h3 id="sec-4-3">Most corps mess it up</h3>
+<ul>
 <li>New features &gt; fixing security bugs</li>
-<li>Security ranks even lower than tech debt</li>
-<li>At least devs know about tech debt&#x2026;</li>
+<li>People make mistakes</li>
+<li>Good crypto looks like bad crypto</li>
 
 </ul>
 
@@ -228,24 +242,14 @@ Maybe they'll never go off! Right?!
 
 </section>
 <section id="slide-sec-4-3-2">
-<h4 id="sec-4-3-2">Sometimes they do</h4>
+<h4 id="sec-4-3-2">Doesn't matter</h4>
 <p>
-Billions of USD yearly
+Little/no effect on bottom line
 </p>
 
 </section>
 <section id="slide-sec-4-3-3">
-<h4 id="sec-4-3-3">Still doesn't matter</h4>
-<ulclass="fragment roll-in">
-<li>Companies usually not liable</li>
-<li>Execs rarely held accountable</li>
-<li>Little/no effect on bottom line</li>
-
-</ul>
-
-</section>
-<section id="slide-sec-4-3-4">
-<h4 id="sec-4-3-4">Sony</h4>
+<h4 id="sec-4-3-3">Sony</h4>
 
 <div class="figure">
 <p><img src="./media/SonyMarketCap.png" alt="SonyMarketCap.png" style="width:80%" />
@@ -253,11 +257,8 @@ Billions of USD yearly
 </div>
 
 </section>
-<section id="slide-sec-4-3-5">
-<h4 id="sec-4-3-5">Most corps don't care</h4>
-<p>
-They can afford not to.
-</p>
+<section id="slide-sec-4-3-4">
+<h4 id="sec-4-3-4">Rational actors</h4>
 
 </section>
 <section id="slide-sec-4-4">
@@ -406,34 +407,22 @@ small composed pieces &gt; large monoliths
 
 </section>
 <section id="slide-sec-5-2-3">
-<h4 id="sec-5-2-3">No implications</h4>
-<ulclass="fragment roll-in">
-<li>Microservices ↛ security bliss</li>
-<li>Monolithic services ↛ security issues</li>
-
-</ul>
+<h4 id="sec-5-2-3">7 ± 2</h4>
 
 </section>
 <section id="slide-sec-5-2-4">
-<h4 id="sec-5-2-4">Poorly structured programs</h4>
-
-<div class="figure">
-<p><img src="./media/PoorlyStructuredMonolith.png" alt="PoorlyStructuredMonolith.png" />
-</p>
-</div>
-
-</section>
-<section id="slide-sec-5-2-5">
-<h4 id="sec-5-2-5">Few certainties</h4>
-<ulclass="fragment roll-in">
-<li>death ∧ taxes</li>
-<li>software → problems</li>
+<h4 id="sec-5-2-4">No implications</h4>
+<ul>
+<li>Microservices ↛ security bliss</li>
+<li>Monolithic services ↛ security issues</li>
+<li>Pieces can be functions, classes&#x2026;</li>
+<li>(and services too)</li>
 
 </ul>
 
 </section>
-<section id="slide-sec-5-2-6">
-<h4 id="sec-5-2-6">Microservices</h4>
+<section id="slide-sec-5-2-5">
+<h4 id="sec-5-2-5">Microservices</h4>
 <ul>
 <li>Yes, when split by authority</li>
 <li>Arbitrary splits can make it worse</li>
@@ -441,10 +430,20 @@ small composed pieces &gt; large monoliths
 <ul>
 <li>More communication</li>
 <li>More programming environments</li>
+<li>&#x2026;</li>
 
 </ul></li>
 
 </ul>
+
+</section>
+<section id="slide-sec-5-2-6">
+<h4 id="sec-5-2-6">Poorly structured programs</h4>
+
+<div class="figure">
+<p><img src="./media/PoorlyStructuredMonolith.png" alt="PoorlyStructuredMonolith.png" />
+</p>
+</div>
 
 </section>
 <section id="slide-sec-5-2-7">
@@ -453,6 +452,7 @@ small composed pieces &gt; large monoliths
 <li>Best thing after a bug tracker</li>
 <li>Disseminate experience</li>
 <li>Cultivate culture of quality</li>
+<li>In-house and third-party</li>
 
 </ul>
 
@@ -481,7 +481,7 @@ A lot <i>can</i> be automated, e.g.,
 
 </section>
 <section id="slide-sec-5-3-1">
-<h4 id="sec-5-3-1">Some employers do care</h4>
+<h4 id="sec-5-3-1">Some employers are great</h4>
 <ul>
 <li>Particularly if tech &amp; service are core business</li>
 <li>I work on security full-time at Rackspace</li>
@@ -519,63 +519,83 @@ Shape minds not on the org chart
 </section>
 <section>
 <section id="slide-sec-6">
-<h2 id="sec-6">Conversations about security</h2>
+<h2 id="sec-6">Meta-conversation</h2>
 <div class="outline-text-2" id="text-6">
 </div></section>
 <section id="slide-sec-6-1">
-<h3 id="sec-6-1">Some vocabulary</h3>
-<div class="outline-text-3" id="text-6-1">
-</div></section>
-<section id="slide-sec-6-1-1">
-<h4 id="sec-6-1-1">Attack model</h4>
-<p>
-How <i>will</i> they attack the system?
-</p>
-
-</section>
-<section id="slide-sec-6-1-2">
-<h4 id="sec-6-1-2">Attack surface</h4>
-<p>
-How <i>can</i> they attack the system?
-</p>
-
-</section>
-<section id="slide-sec-6-2">
-<h3 id="sec-6-2">Channeling Zooko</h3>
+<h3 id="sec-6-1">Channeling Zooko</h3>
 <p>
 Security is&#x2026;
 </p>
 
-<ulclass="fragment roll-in">
-<li>not perfect vs imperfect</li>
-<li>not better vs worse</li>
-<li><i>this</i> surface vs <i>that</i> surface</li>
+<ul>
+<li class="fragment roll-in">not perfect vs imperfect</li>
+<li class="fragment roll-in">not better vs worse</li>
+<li class="fragment roll-in"><i>this</i> surface vs <i>that</i> surface</li>
 
 </ul>
 
 </section>
+<section id="slide-sec-6-2">
+<h3 id="sec-6-2">Some vocabulary</h3>
+<div class="outline-text-3" id="text-6-2">
+</div></section>
+<section id="slide-sec-6-2-1">
+<h4 id="sec-6-2-1">Attack surface</h4>
+<p>
+How <i>can</i> adversaries attack the system?
+</p>
+
+</section>
+<section id="slide-sec-6-2-2">
+<h4 id="sec-6-2-2">Attack model</h4>
+<p>
+How <i>will</i> adversaries attack the system?
+</p>
+
+</section>
 <section id="slide-sec-6-3">
 <h3 id="sec-6-3">Useful security proposals</h3>
-<olclass="fragment roll-in">
-<li>Description</li>
-<li>Attack model (+ motivation)</li>
-<li>Difference in attack surface</li>
-<li>Difference in user experience</li>
+<ol>
+<li class="fragment roll-in">Description</li>
+<li class="fragment roll-in">Attack model (+ motivation)</li>
+<li class="fragment roll-in">Difference in attack surface</li>
+<li class="fragment roll-in">Difference in user experience</li>
 
 </ol>
 
 </section>
 <section id="slide-sec-6-3-1">
-<h4 id="sec-6-3-1">Attack models</h4>
+<h4 id="sec-6-3-1">Description</h4>
 <ul>
-<li>What are you protecting against?</li>
-<li>How is this addressed now?</li>
+<li>What are you actually going to do?</li>
+<li>Devil's in the details</li>
 
 </ul>
 
 </section>
 <section id="slide-sec-6-3-2">
-<h4 id="sec-6-3-2">User experience</h4>
+<h4 id="sec-6-3-2">Attack models</h4>
+<ul>
+<li>What are you protecting against?</li>
+<li>How is this addressed now?</li>
+<li>How will it be addressed afterwards?</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-3-3">
+<h4 id="sec-6-3-3">Attack surface</h4>
+<ul>
+<li>Not always a strict improvement</li>
+<li>E.g., install some new monitoring software</li>
+<li>What about bugs in that software?</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-6-3-4">
+<h4 id="sec-6-3-4">User experience</h4>
 <ul>
 <li>One of the most important aspects</li>
 <li>Usually completely forgotten about</li>
@@ -669,7 +689,7 @@ Hollywood-level technology!
 </section>
 <section id="slide-sec-6-4-10">
 <h4 id="sec-6-4-10">Fifth Amendment</h4>
-<ulclass="fragment roll-in">
+<ul class="fragment roll-in">
 <li>(The American one)</li>
 <li>(I am aware we're in Canada)</li>
 
@@ -723,8 +743,8 @@ It depends on your threat model!
 </p>
 
 <ul>
-<li>Randos? Probably touch id</li>
-<li>Cops? Definitely passcode</li>
+<li>Random people? Probably touch id</li>
+<li>Law enforcement? Definitely passcode</li>
 
 </ul>
 

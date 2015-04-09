@@ -46,12 +46,17 @@
 
   #+ATTR_REVEAL: :frag roll-in
   * Tools don't work
-  * Corps don't care
+  * Corps mess it up
   * ~.edu~ doesn't educate
 
 ** Our tools don't work
 
    How do I write the unit test for "security"?
+
+   #+BEGIN_NOTES
+   When I say tools, I mean that in the fairly abstract
+   sense, not e.g. pip or Emacs
+   #+END_NOTES
 
 *** How do we learn software?
 
@@ -61,13 +66,17 @@
 
     Missing or terrible
 
+*** Google & StackOverflow
+
+    Lots of misinformation
+
 *** How else do we learn?
 
     (Especially without docs)
 
 *** We play with it!
 
-    #+ATTR_REVEAL: :frag roll-in
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install it
     2. Play with it
     3. Learn something
@@ -79,7 +88,7 @@
 
 *** Security doesn't work that way
 
-    #+ATTR_REVEAL: :frag roll-in
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install it
     2. Play with it
     3. Get it wrong
@@ -92,7 +101,7 @@
 
 *** It /almost/ works that way
 
-    #+ATTR_REVEAL: :frag roll-in
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install software
     2. Try to break it
     3. Learn something
@@ -108,37 +117,26 @@
 
     Who regularly gets to do e.g. pentesting?
 
-** Most corps don't care
+** Most corps mess it up
 
-   #+ATTR_REVEAL: :frag roll-in
-   * (Assuming they know; they usually don't)
    * New features > fixing security bugs
-   * Security ranks even lower than tech debt
-   * At least devs know about tech debt...
+   * People make mistakes
+   * Good crypto looks like bad crypto
 
 *** Time bombs
 
    Maybe they'll never go off! Right?!
 
-*** Sometimes they do
+*** Doesn't matter
 
-   Billions of USD yearly
-
-*** Still doesn't matter
-
-   #+ATTR_REVEAL: :frag roll-in
-   * Companies usually not liable
-   * Execs rarely held accountable
-   * Little/no effect on bottom line
+    Little/no effect on bottom line
 
 *** Sony
 
    #+ATTR_HTML: :style width:80%
    [[./media/SonyMarketCap.png]]
 
-*** Most corps don't care
-
-   They can afford not to.
+*** Rational actors
 
 ** Abstinence-only education
 *** What /do/ we teach?
@@ -220,21 +218,14 @@
 
     small composed pieces > large monoliths
 
+*** 7 ± 2
+
 *** No implications
 
-    #+ATTR_REVEAL: :frag roll-in
     * Microservices ↛ security bliss
     * Monolithic services ↛ security issues
-
-*** Poorly structured programs
-
-    [[./media/PoorlyStructuredMonolith.png]]
-
-*** Few certainties
-
-    #+ATTR_REVEAL: :frag roll-in
-    * death ∧ taxes
-    * software → problems
+    * Pieces can be functions, classes...
+    * (and services too)
 
 *** Microservices
 
@@ -243,12 +234,18 @@
     * Larger attack surface, because:
       * More communication
       * More programming environments
+      * ...
+
+*** Poorly structured programs
+
+    [[./media/PoorlyStructuredMonolith.png]]
 
 *** Code review
 
     * Best thing after a bug tracker
     * Disseminate experience
     * Cultivate culture of quality
+    * In-house and third-party
 
 *** Automated testing
 
@@ -262,7 +259,7 @@
 
    [[./media/NotAllCorps.jpg]]
 
-*** Some employers do care
+*** Some employers are great
 
     * Particularly if tech & service are core business
     * I work on security full-time at Rackspace
@@ -283,38 +280,50 @@
 
    Shape minds not on the org chart
 
-* Conversations about security
-** Some vocabulary
-
-*** Attack model
-
-    How /will/ they attack the system?
-
-*** Attack surface
-
-    How /can/ they attack the system?
-
+* Meta-conversation
 ** Channeling Zooko
 
    Security is...
 
-   #+ATTR_REVEAL: :frag roll-in
+   #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
    * not perfect vs imperfect
    * not better vs worse
    * /this/ surface vs /that/ surface
 
+** Some vocabulary
+
+*** Attack surface
+
+    How /can/ adversaries attack the system?
+
+*** Attack model
+
+    How /will/ adversaries attack the system?
+
 ** Useful security proposals
 
-   #+ATTR_REVEAL: :frag roll-in
+   #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
    1. Description
    1. Attack model (+ motivation)
    1. Difference in attack surface
    1. Difference in user experience
 
+*** Description
+
+    * What are you actually going to do?
+    * Devil's in the details
+
 *** Attack models
 
-   * What are you protecting against?
-   * How is this addressed now?
+    * What are you protecting against?
+    * How is this addressed now?
+    * How will it be addressed afterwards?
+
+*** Attack surface
+
+    * Not always a strict improvement
+    * E.g., install some new monitoring software
+    * What about bugs in that software?
 
 *** User experience
 
@@ -402,8 +411,8 @@
 
     It depends on your threat model!
 
-    * Randos? Probably touch id
-    * Cops? Definitely passcode
+    * Random people? Probably touch id
+    * Law enforcement? Definitely passcode
 
 *** Again, not legal or opsec advice
 
