@@ -44,7 +44,7 @@
 
 ** No wonder it's broken!
 
-  #+ATTR_REVEAL: :frag roll-in
+  #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
   * Tools don't work
   * Corps mess it up
   * ~.edu~ doesn't educate
@@ -204,7 +204,7 @@
 ** Education can be fixed
 
    * Public education through Open Source
-     * Shameless Crypto 101 plug
+     * <shameless Crypto 101 plug>
      * Awesome projects like ~cryptography~
    * Maybe someone will fix .edu?
 
@@ -243,7 +243,7 @@
 
 *** Code review
 
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     * Best thing after a bug tracker
     * Disseminate experience
     * Cultivate culture of quality
