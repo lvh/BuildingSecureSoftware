@@ -201,10 +201,12 @@
 
 ** Problems are not set in stone
 
-   * Education is fixable
-     * Teach people new tricks
-     * Maybe even fix ~.edu~
-   * Public education
+** Education can be fixed
+
+   * Public education through Open Source
+     * Shameless Crypto 101 plug
+     * Awesome projects like ~cryptography~
+   * Maybe someone will fix .edu?
 
 ** Some tools do work
 
@@ -241,6 +243,7 @@
 
 *** Code review
 
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
     * Best thing after a bug tracker
     * Disseminate experience
     * Cultivate culture of quality
@@ -260,20 +263,13 @@
 
 *** Some employers are great
 
-    Lots of great places working for the public good
-
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
-    * Google, Heroku, Rackspace... all excellent teams!
-    * This does not fix our systemic industry problems
+    * Lots of great places working for the public good
+    * Does not fix our systemic industry problems?
 
 *** Adversarial approach
 
     * Third party security audits
     * Internal red/blue teams
-
-** Open source!
-
-   Shape minds not on the org chart
 
 * Meta-conversation
 ** Channeling Zooko
