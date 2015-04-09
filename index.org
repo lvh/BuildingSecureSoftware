@@ -218,14 +218,13 @@
 
     small composed pieces > large monoliths
 
-*** 7 ± 2
-
 *** No implications
 
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
     * Microservices ↛ security bliss
     * Monolithic services ↛ security issues
     * Pieces can be functions, classes...
-    * (and services too)
+      * (and services too)
 
 *** Microservices
 
@@ -261,15 +260,11 @@
 
 *** Some employers are great
 
-    * Particularly if tech & service are core business
-    * I work on security full-time at Rackspace
-    * Google, Heroku... all have excellent teams
+    Lots of great places working for the public good
+
+    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
+    * Google, Heroku, Rackspace... all excellent teams!
     * This does not fix our systemic industry problems
-
-*** Conway's law
-
-    * Software mimics organization
-    * If security is an afterthought...
 
 *** Adversarial approach
 
