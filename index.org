@@ -1,4 +1,4 @@
-#+Title: Building secure software
+!#+Title: Building secure software
 #+Author: @lvh
 #+Email: _@lvh.io
 
@@ -35,7 +35,7 @@
 
 ** Not in this talk
 
-   #+ATTR_REVEAL: :frag roll-in
+   #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
    * Common security bugs
    * Importance of software updates
    * What software to use
@@ -45,14 +45,21 @@
 ** Some are security bugs
 ** Security bugs are bad
 
+** A message of hope
+
+   * Not suggesting we give up
+   * Not suggesting perfection
+   * I'm suggesting we can do better
+
 * Bad news
 
 ** No wonder it's broken!
 
-  #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
+  #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
   * Tools don't work
   * Corps mess it up
   * ~.edu~ doesn't educate
+  * ...
 
 ** Our tools don't work
 
@@ -73,7 +80,8 @@
 
 *** Google & StackOverflow
 
-    Lots of misinformation
+    * Lots of misinformation
+    * Good practice looks just like bad practice
 
 *** How else do we learn?
 
@@ -81,7 +89,6 @@
 
 *** We play with it!
 
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install it
     2. Play with it
     3. Learn something
@@ -93,7 +100,6 @@
 
 *** Security doesn't work that way
 
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install it
     2. Play with it
     3. Get it wrong
@@ -102,11 +108,11 @@
     #+BEGIN_NOTES
     Million ways to screw it up: all-zero IVs, unauth enc...
     Crypto generally doesn't complain when you get it wrong
+    Good practice looks just like bad practice
     #+END_NOTES
 
 *** It /almost/ works that way
 
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     1. Install software
     2. Try to break it
     3. Learn something
@@ -115,33 +121,24 @@
 *** We're not trained to think that way
 
     * Make it work, not make it fail
-    * Often (not always) pretty hard
-    * Issues usually not obvious
+    * Failure is harder; issues more subtle
+
 
 *** We're not /paid/ to think that way
 
-    Who regularly gets to do e.g. pentesting?
+    1. Who regularly writes software?
+    2. Who regularly gets to do pentesting?
 
 ** Most corps mess it up
 
    * New features > fixing security bugs
    * People make mistakes
-   * Good crypto looks like bad crypto
-
-*** Time bombs
-
-   Maybe they'll never go off! Right?!
-
-*** Doesn't matter
-
-    Little/no effect on bottom line
+   * Good practice looks just like bad practice
 
 *** Sony
 
    #+ATTR_HTML: :style width:80%
    [[./media/SonyMarketCap.png]]
-
-*** Rational actors
 
 ** Abstinence-only education
 *** What /do/ we teach?
@@ -180,20 +177,12 @@
    Ignores that universities are supposed to be about research, not minting programmers
    #+END_NOTES
 
-*** POLA > LSP
-
-   #+BEGIN_NOTES
-   If we taught POLA instead of LSP, we'd be way better off
-   Plenty of programmers don't know about LSP, write software that violates it, but works fine
-   IF you don't know about POLA it's basically always a security problem
-   #+END_NOTES
-
 ** Security is not a priority
 
    (Not in business, not in education...)
 
 *** ⊢
-*** Don't be a jerk to your coworkers about infosec
+*** Don't be a jerk to peers about infosec
 *** Don't be a jerk about infosec
 *** Don't be a jerk
 *** Don't
@@ -232,27 +221,18 @@
     * Monolithic services ↛ security issues
     * Pieces can be functions, classes...
       * (and services too)
-
-*** Microservices
-
-    * Yes, when split by authority
     * Arbitrary splits can make it worse
-    * Larger attack surface, because:
-      * More communication
-      * More programming environments
-      * ...
-
-*** Poorly structured programs
-
-    [[./media/PoorlyStructuredMonolith.png]]
 
 *** Code review
 
-    #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
     * Best thing after a bug tracker
     * Disseminate experience
     * Cultivate culture of quality
-    * In-house and third-party
+
+*** Adversarial approach
+
+    * In-house (red/blue team)
+    * Third-party audits
 
 *** Automated testing
 
@@ -269,12 +249,7 @@
 *** Some employers are great
 
     * Lots of great places working for the public good
-    * Does not fix our systemic industry problems?
-
-*** Adversarial approach
-
-    * Third party security audits
-    * Internal red/blue teams
+    * Does not fix our systemic industry problems
 
 * Meta-conversation
 ** Channeling Zooko
@@ -292,15 +267,14 @@
 
     How /can/ adversaries attack the system?
 
-*** Attack model
+*** Threat model
 
     How /will/ adversaries attack the system?
 
 ** Useful security proposals
 
-   #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
    1. Description
-   1. Attack model (+ motivation)
+   1. Threat model (+ motivation)
    1. Difference in attack surface
    1. Difference in user experience
 
@@ -309,13 +283,13 @@
     * What are you actually going to do?
     * Devil's in the details
 
-*** Attack models
+*** Threat model
 
     * What are you protecting against?
     * How is this addressed now?
     * How will it be addressed afterwards?
 
-*** Attack surface
+*** Difference in attack surface
 
     * Not always a strict improvement
     * E.g., install some new monitoring software
@@ -346,6 +320,8 @@
     * Patterns (~ passcode)
     * Face recognition (~ fingerprint)
 
+*** Which one do I pick?
+
 *** Biometrics
 
     Hollywood-level technology!
@@ -367,18 +343,13 @@
     #+ATTR_HTML: :style width:50%
     [[./media/Fork.svg]]
 
-*** Which one do you pick?
-
-    * Either is better than neither
-    * Each has their flaws
-
 *** Threat models!
 
 *** Fifth Amendment
 
-    #+ATTR_REVEAL: :frag roll-in
-    * (The American one)
-    * (I am aware we're in Canada)
+    (Yes, the American one)
+
+    (I am aware we're in Canada)
 
 *** Disclaimer
 
@@ -412,7 +383,7 @@
 
 *** Again, not legal or opsec advice
 
-    * I know what happens when you reset your phone
+    * I know what happens when you restart an iPhone
     * I am trying to illustrate threat models
 
 * Wrap-up
@@ -425,3 +396,7 @@
    * Don't need to be an expert
 
 ** Thank you!
+
+* Slides
+
+  ~www.lvh.io/BuildingSecureSoftware/~
