@@ -21,6 +21,11 @@
    Software engineer (distributed systems, infosec)
    #+END_NOTES
 
+** PyCon
+
+   #+ATTR_HTML: :style width:100%
+   [[./media/PyCon.png]]
+
 ** Rackspace
 
    #+ATTR_HTML: :style width:60%
