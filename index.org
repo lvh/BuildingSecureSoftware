@@ -1,4 +1,4 @@
-!#+Title: Building secure software
+#+Title: Building secure software
 #+Author: @lvh
 #+Email: _@lvh.io
 
