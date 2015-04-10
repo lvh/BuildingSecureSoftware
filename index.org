@@ -33,17 +33,21 @@
 
 ** In this talk
 
+   * Bad news
+   * Good news
+   * Meta-conversation
+
 ** Not in this talk
 
-   #+ATTR_REVEAL: :frag (roll-in roll-in roll-in)
    * Common security bugs
    * Importance of software updates
    * What software to use
 
 * The problem
-** All software has bugs
-** Some are security bugs
-** Security bugs are bad
+
+  * All software has bugs
+  * Some are security bugs
+  * Security bugs are bad
 
 ** A message of hope
 
@@ -55,7 +59,6 @@
 
 ** No wonder it's broken!
 
-  #+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
   * Tools don't work
   * Corps mess it up
   * ~.edu~ doesn't educate
@@ -135,7 +138,7 @@
    * People make mistakes
    * Good practice looks just like bad practice
 
-*** Sony
+*** A large publicly traded company
 
    #+ATTR_HTML: :style width:80%
    [[./media/SonyMarketCap.png]]
