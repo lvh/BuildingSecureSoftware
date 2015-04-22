@@ -41,7 +41,7 @@
 
    * Common security bugs
    * Importance of software updates
-   * What software to use
+   * What (soft|hard)ware to use
 
 * The problem
 
